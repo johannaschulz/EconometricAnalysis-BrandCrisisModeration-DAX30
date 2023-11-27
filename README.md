@@ -7,7 +7,7 @@ This master's thesis project involves a detailed analysis of the moderating effe
 ### Descriptive analysis:
 The project begins with a thorough descriptive analysis of the dataset, which includes the monthly share prices and/or market capitalizations of the 30 DAX-listed companies from the beginning of 2019 to the end of 2022. This section lays the foundation by providing insights into fundamental trends, patterns and characteristics of the data.
 ### Time series presentation:
-Extensive time series analyses are carried out to visualize the dynamics over time. These plots not only illustrate stock price movements over time, but also highlight key periods of economic change and volatility, particularly emphasizing the occurrence and progression of the COVID-19 crisis.
+Time series visualizations are carried out to visualize the dynamics over time. These plots not only illustrate stock price movements over time, but also highlight key periods of economic change and volatility, particularly emphasizing the occurrence and progression of the COVID-19 crisis.
 ### Econometric analysis - fixed effects regression:
 The centerpiece of the project is a econometric analysis using fixed effects regression models. This approach allows for the control of unobserved, time-invariant characteristics of the individual companies and ensures that the observed effects are due to the economic crisis and brand strength and not to other static differences between the companies.
 ### Moderation analysis via interaction terms:
