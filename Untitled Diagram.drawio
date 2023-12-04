@@ -1,0 +1,25 @@
+<mxfile host="app.diagrams.net" modified="2023-12-02T13:20:28.453Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15" etag="7Yby1rXZuzn9dVS8A2yH" version="22.1.5" type="github">
+  <diagram name="Page-1" id="7igvs6gEivPfTOj5GeFv">
+    <mxGraphModel dx="984" dy="667" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Orsz5sGhs1cldK6UFUGG-1" value="Horizontal Container" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="220" width="200" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="Orsz5sGhs1cldK6UFUGG-3" value="Yahoo Finance" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="Orsz5sGhs1cldK6UFUGG-1">
+          <mxGeometry x="44" y="30" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Orsz5sGhs1cldK6UFUGG-5" value="Kantar BrandZ" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="Orsz5sGhs1cldK6UFUGG-1">
+          <mxGeometry x="44" y="150" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Orsz5sGhs1cldK6UFUGG-6" value="Twitter" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="Orsz5sGhs1cldK6UFUGG-1">
+          <mxGeometry x="44" y="270" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Orsz5sGhs1cldK6UFUGG-7" value="wie" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="220" width="200" height="420" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
