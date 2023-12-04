@@ -1,0 +1,673 @@
+TickerCode,Month-Year,VWAP,CompanyName,Brand,BrandRanking,StrongBrand,Industry,Sector,MultipleStrongBrands
+1COV.F,2019-01-01,46.57204735850442,Covestro AG,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+1COV.F,2019-02-01,49.69629176677038,Covestro AG,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+1COV.F,2019-03-01,48.27098860415117,Covestro AG,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+1COV.F,2019-04-01,52.29962978117289,Covestro AG,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+1COV.F,2019-05-01,44.20131909570112,Covestro AG,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+1COV.F,2019-06-01,42.38713856263015,Covestro AG,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+1COV.F,2019-07-01,42.514428562383415,Covestro AG,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+1COV.F,2019-08-01,39.41527614038927,Covestro AG,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+1COV.F,2019-09-01,43.86983132309987,Covestro AG,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+1COV.F,2019-10-01,44.68081461620206,Covestro AG,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+1COV.F,2019-11-01,44.62738254832461,Covestro AG,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+1COV.F,2019-12-01,42.14219684697461,Covestro AG,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+1COV.F,2020-01-01,40.02263291571302,Covestro AG,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+1COV.F,2020-02-01,38.059678125870285,Covestro AG,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+1COV.F,2020-03-01,28.770482435640393,Covestro AG,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+1COV.F,2020-04-01,29.76271872727939,Covestro AG,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+1COV.F,2020-05-01,31.11998298176056,Covestro AG,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+1COV.F,2020-06-01,34.519528870110086,Covestro AG,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+1COV.F,2020-07-01,35.39480369276306,Covestro AG,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+1COV.F,2020-08-01,37.94758071857681,Covestro AG,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+1COV.F,2020-09-01,43.946951443428866,Covestro AG,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+1COV.F,2020-10-01,43.308665917441786,Covestro AG,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+1COV.F,2020-11-01,44.60750013523355,Covestro AG,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+1COV.F,2020-12-01,49.366927299325546,Covestro AG,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+ADS.F,2019-01-01,199.66446305298055,Adidas AG (former: -Solomon),adidas,8.0,1.0,Footwear & Accessories ,Consumer Cyclical,0.0
+ADS.F,2019-02-01,205.15998943160602,Adidas AG (former: -Solomon),adidas,8.0,1.0,Footwear & Accessories ,Consumer Cyclical,0.0
+ADS.F,2019-03-01,209.4429833609121,Adidas AG (former: -Solomon),adidas,8.0,1.0,Footwear & Accessories ,Consumer Cyclical,0.0
+ADS.F,2019-04-01,226.7609812240321,Adidas AG (former: -Solomon),adidas,8.0,1.0,Footwear & Accessories ,Consumer Cyclical,0.0
+ADS.F,2019-05-01,252.14199517170255,Adidas AG (former: -Solomon),adidas,8.0,1.0,Footwear & Accessories ,Consumer Cyclical,0.0
+ADS.F,2019-06-01,264.7908244101086,Adidas AG (former: -Solomon),adidas,8.0,1.0,Footwear & Accessories ,Consumer Cyclical,0.0
+ADS.F,2019-07-01,280.9094291497227,Adidas AG (former: -Solomon),adidas,8.0,1.0,Footwear & Accessories ,Consumer Cyclical,0.0
+ADS.F,2019-08-01,270.09796312559826,Adidas AG (former: -Solomon),adidas,8.0,1.0,Footwear & Accessories ,Consumer Cyclical,0.0
+ADS.F,2019-09-01,274.99064288120906,Adidas AG (former: -Solomon),adidas,8.0,1.0,Footwear & Accessories ,Consumer Cyclical,0.0
+ADS.F,2019-10-01,277.3515067717249,Adidas AG (former: -Solomon),adidas,8.0,1.0,Footwear & Accessories ,Consumer Cyclical,0.0
+ADS.F,2019-11-01,273.2650107207844,Adidas AG (former: -Solomon),adidas,8.0,1.0,Footwear & Accessories ,Consumer Cyclical,0.0
+ADS.F,2019-12-01,284.3075875256553,Adidas AG (former: -Solomon),adidas,8.0,1.0,Footwear & Accessories ,Consumer Cyclical,0.0
+ADS.F,2020-01-01,305.3143485728032,Adidas AG (former: -Solomon),adidas,8.0,1.0,Footwear & Accessories ,Consumer Cyclical,0.0
+ADS.F,2020-02-01,271.730961369706,Adidas AG (former: -Solomon),adidas,8.0,1.0,Footwear & Accessories ,Consumer Cyclical,0.0
+ADS.F,2020-03-01,201.1592871326594,Adidas AG (former: -Solomon),adidas,8.0,1.0,Footwear & Accessories ,Consumer Cyclical,0.0
+ADS.F,2020-04-01,212.50857445609412,Adidas AG (former: -Solomon),adidas,8.0,1.0,Footwear & Accessories ,Consumer Cyclical,0.0
+ADS.F,2020-05-01,213.63208803823912,Adidas AG (former: -Solomon),adidas,8.0,1.0,Footwear & Accessories ,Consumer Cyclical,0.0
+ADS.F,2020-06-01,244.35045143761067,Adidas AG (former: -Solomon),adidas,8.0,1.0,Footwear & Accessories ,Consumer Cyclical,0.0
+ADS.F,2020-07-01,240.42069590811832,Adidas AG (former: -Solomon),adidas,8.0,1.0,Footwear & Accessories ,Consumer Cyclical,0.0
+ADS.F,2020-08-01,256.4061626812579,Adidas AG (former: -Solomon),adidas,8.0,1.0,Footwear & Accessories ,Consumer Cyclical,0.0
+ADS.F,2020-09-01,274.12221101604933,Adidas AG (former: -Solomon),adidas,8.0,1.0,Footwear & Accessories ,Consumer Cyclical,0.0
+ADS.F,2020-10-01,271.4349301617233,Adidas AG (former: -Solomon),adidas,8.0,1.0,Footwear & Accessories ,Consumer Cyclical,0.0
+ADS.F,2020-11-01,282.124728062069,Adidas AG (former: -Solomon),adidas,8.0,1.0,Footwear & Accessories ,Consumer Cyclical,0.0
+ADS.F,2020-12-01,286.82744473726643,Adidas AG (former: -Solomon),adidas,8.0,1.0,Footwear & Accessories ,Consumer Cyclical,0.0
+ALV.F,2019-01-01,180.3762523087998,Allianz SE,Allianz,12.0,1.0,Insurance - Diversified,Financial Services,0.0
+ALV.F,2019-02-01,189.72962888404444,Allianz SE,Allianz,12.0,1.0,Insurance - Diversified,Financial Services,0.0
+ALV.F,2019-03-01,198.94341156463489,Allianz SE,Allianz,12.0,1.0,Insurance - Diversified,Financial Services,0.0
+ALV.F,2019-04-01,209.4362243835641,Allianz SE,Allianz,12.0,1.0,Insurance - Diversified,Financial Services,0.0
+ALV.F,2019-05-01,204.89651627084953,Allianz SE,Allianz,12.0,1.0,Insurance - Diversified,Financial Services,0.0
+ALV.F,2019-06-01,207.32201311755682,Allianz SE,Allianz,12.0,1.0,Insurance - Diversified,Financial Services,0.0
+ALV.F,2019-07-01,215.26614105356444,Allianz SE,Allianz,12.0,1.0,Insurance - Diversified,Financial Services,0.0
+ALV.F,2019-08-01,200.80290210008977,Allianz SE,Allianz,12.0,1.0,Insurance - Diversified,Financial Services,0.0
+ALV.F,2019-09-01,209.14004294460176,Allianz SE,Allianz,12.0,1.0,Insurance - Diversified,Financial Services,0.0
+ALV.F,2019-10-01,217.1728291252589,Allianz SE,Allianz,12.0,1.0,Insurance - Diversified,Financial Services,0.0
+ALV.F,2019-11-01,219.84620533967708,Allianz SE,Allianz,12.0,1.0,Insurance - Diversified,Financial Services,0.0
+ALV.F,2019-12-01,218.00333093609612,Allianz SE,Allianz,12.0,1.0,Insurance - Diversified,Financial Services,0.0
+ALV.F,2020-01-01,218.93202273385984,Allianz SE,Allianz,12.0,1.0,Insurance - Diversified,Financial Services,0.0
+ALV.F,2020-02-01,213.83510958641776,Allianz SE,Allianz,12.0,1.0,Insurance - Diversified,Financial Services,0.0
+ALV.F,2020-03-01,155.9729453448063,Allianz SE,Allianz,12.0,1.0,Insurance - Diversified,Financial Services,0.0
+ALV.F,2020-04-01,163.4701704728757,Allianz SE,Allianz,12.0,1.0,Insurance - Diversified,Financial Services,0.0
+ALV.F,2020-05-01,158.2422885463115,Allianz SE,Allianz,12.0,1.0,Insurance - Diversified,Financial Services,0.0
+ALV.F,2020-06-01,182.97740154790802,Allianz SE,Allianz,12.0,1.0,Insurance - Diversified,Financial Services,0.0
+ALV.F,2020-07-01,183.48792179446988,Allianz SE,Allianz,12.0,1.0,Insurance - Diversified,Financial Services,0.0
+ALV.F,2020-08-01,182.32202516454555,Allianz SE,Allianz,12.0,1.0,Insurance - Diversified,Financial Services,0.0
+ALV.F,2020-09-01,172.05465748684162,Allianz SE,Allianz,12.0,1.0,Insurance - Diversified,Financial Services,0.0
+ALV.F,2020-10-01,159.16447333633917,Allianz SE,Allianz,12.0,1.0,Insurance - Diversified,Financial Services,0.0
+ALV.F,2020-11-01,184.81256860534566,Allianz SE,Allianz,12.0,1.0,Insurance - Diversified,Financial Services,0.0
+ALV.F,2020-12-01,197.57672655677257,Allianz SE,Allianz,12.0,1.0,Insurance - Diversified,Financial Services,0.0
+BAS.F,2019-01-01,63.96519655186726,BASF SE,,0.0,0.0,Chemicals,Basic Materials,0.0
+BAS.F,2019-02-01,65.79905320224493,BASF SE,,0.0,0.0,Chemicals,Basic Materials,0.0
+BAS.F,2019-03-01,67.01677272602528,BASF SE,,0.0,0.0,Chemicals,Basic Materials,0.0
+BAS.F,2019-04-01,71.59272669290905,BASF SE,,0.0,0.0,Chemicals,Basic Materials,0.0
+BAS.F,2019-05-01,65.00931485497763,BASF SE,,0.0,0.0,Chemicals,Basic Materials,0.0
+BAS.F,2019-06-01,61.62500604103525,BASF SE,,0.0,0.0,Chemicals,Basic Materials,0.0
+BAS.F,2019-07-01,61.40963610979148,BASF SE,,0.0,0.0,Chemicals,Basic Materials,0.0
+BAS.F,2019-08-01,57.84894806164253,BASF SE,,0.0,0.0,Chemicals,Basic Materials,0.0
+BAS.F,2019-09-01,63.19596035705088,BASF SE,,0.0,0.0,Chemicals,Basic Materials,0.0
+BAS.F,2019-10-01,66.54556809621975,BASF SE,,0.0,0.0,Chemicals,Basic Materials,0.0
+BAS.F,2019-11-01,70.06007438413744,BASF SE,,0.0,0.0,Chemicals,Basic Materials,0.0
+BAS.F,2019-12-01,67.81910832647208,BASF SE,,0.0,0.0,Chemicals,Basic Materials,0.0
+BAS.F,2020-01-01,64.3907106144041,BASF SE,,0.0,0.0,Chemicals,Basic Materials,0.0
+BAS.F,2020-02-01,58.69513729290751,BASF SE,,0.0,0.0,Chemicals,Basic Materials,0.0
+BAS.F,2020-03-01,44.92438270551535,BASF SE,,0.0,0.0,Chemicals,Basic Materials,0.0
+BAS.F,2020-04-01,45.43413728640475,BASF SE,,0.0,0.0,Chemicals,Basic Materials,0.0
+BAS.F,2020-05-01,45.99557122395294,BASF SE,,0.0,0.0,Chemicals,Basic Materials,0.0
+BAS.F,2020-06-01,53.251330799064526,BASF SE,,0.0,0.0,Chemicals,Basic Materials,0.0
+BAS.F,2020-07-01,50.72975691107486,BASF SE,,0.0,0.0,Chemicals,Basic Materials,0.0
+BAS.F,2020-08-01,50.13440589718604,BASF SE,,0.0,0.0,Chemicals,Basic Materials,0.0
+BAS.F,2020-09-01,52.03490667944426,BASF SE,,0.0,0.0,Chemicals,Basic Materials,0.0
+BAS.F,2020-10-01,51.933983434786676,BASF SE,,0.0,0.0,Chemicals,Basic Materials,0.0
+BAS.F,2020-11-01,56.04159539510102,BASF SE,,0.0,0.0,Chemicals,Basic Materials,0.0
+BAS.F,2020-12-01,63.437438748713745,BASF SE,,0.0,0.0,Chemicals,Basic Materials,0.0
+BAYN.F,2019-01-01,64.34588620080964,Bayer AG,,0.0,0.0,Drug Manufacturers - General,Healthcare,0.0
+BAYN.F,2019-02-01,68.38000632399138,Bayer AG,,0.0,0.0,Drug Manufacturers - General,Healthcare,0.0
+BAYN.F,2019-03-01,61.64358241999651,Bayer AG,,0.0,0.0,Drug Manufacturers - General,Healthcare,0.0
+BAYN.F,2019-04-01,60.48607733730969,Bayer AG,,0.0,0.0,Drug Manufacturers - General,Healthcare,0.0
+BAYN.F,2019-05-01,57.90927590915473,Bayer AG,,0.0,0.0,Drug Manufacturers - General,Healthcare,0.0
+BAYN.F,2019-06-01,56.056381653826044,Bayer AG,,0.0,0.0,Drug Manufacturers - General,Healthcare,0.0
+BAYN.F,2019-07-01,59.8165788348196,Bayer AG,,0.0,0.0,Drug Manufacturers - General,Healthcare,0.0
+BAYN.F,2019-08-01,62.80311023375303,Bayer AG,,0.0,0.0,Drug Manufacturers - General,Healthcare,0.0
+BAYN.F,2019-09-01,66.88896130288586,Bayer AG,,0.0,0.0,Drug Manufacturers - General,Healthcare,0.0
+BAYN.F,2019-10-01,65.61376983338869,Bayer AG,,0.0,0.0,Drug Manufacturers - General,Healthcare,0.0
+BAYN.F,2019-11-01,70.29624997383304,Bayer AG,,0.0,0.0,Drug Manufacturers - General,Healthcare,0.0
+BAYN.F,2019-12-01,70.9198835563866,Bayer AG,,0.0,0.0,Drug Manufacturers - General,Healthcare,0.0
+BAYN.F,2020-01-01,74.51624001720951,Bayer AG,,0.0,0.0,Drug Manufacturers - General,Healthcare,0.0
+BAYN.F,2020-02-01,72.52210180552069,Bayer AG,,0.0,0.0,Drug Manufacturers - General,Healthcare,0.0
+BAYN.F,2020-03-01,53.333642309978394,Bayer AG,,0.0,0.0,Drug Manufacturers - General,Healthcare,0.0
+BAYN.F,2020-04-01,58.2015870526294,Bayer AG,,0.0,0.0,Drug Manufacturers - General,Healthcare,0.0
+BAYN.F,2020-05-01,59.96512460090978,Bayer AG,,0.0,0.0,Drug Manufacturers - General,Healthcare,0.0
+BAYN.F,2020-06-01,67.87446348854711,Bayer AG,,0.0,0.0,Drug Manufacturers - General,Healthcare,0.0
+BAYN.F,2020-07-01,62.41630003297571,Bayer AG,,0.0,0.0,Drug Manufacturers - General,Healthcare,0.0
+BAYN.F,2020-08-01,56.93757494375218,Bayer AG,,0.0,0.0,Drug Manufacturers - General,Healthcare,0.0
+BAYN.F,2020-09-01,54.973470448582376,Bayer AG,,0.0,0.0,Drug Manufacturers - General,Healthcare,0.0
+BAYN.F,2020-10-01,44.513412306742524,Bayer AG,,0.0,0.0,Drug Manufacturers - General,Healthcare,0.0
+BAYN.F,2020-11-01,46.343847583651026,Bayer AG,,0.0,0.0,Drug Manufacturers - General,Healthcare,0.0
+BAYN.F,2020-12-01,48.05680785081405,Bayer AG,,0.0,0.0,Drug Manufacturers - General,Healthcare,0.0
+BEI.F,2019-01-01,88.05887342933052,Beiersdorf AG,Nivea,14.0,1.0,Household & Personal products (company),Consumer Defensive,0.0
+BEI.F,2019-02-01,84.69936037994944,Beiersdorf AG,Nivea,14.0,1.0,Household & Personal products (company),Consumer Defensive,0.0
+BEI.F,2019-03-01,87.27926480771353,Beiersdorf AG,Nivea,14.0,1.0,Household & Personal products (company),Consumer Defensive,0.0
+BEI.F,2019-04-01,94.08022172053003,Beiersdorf AG,Nivea,14.0,1.0,Household & Personal products (company),Consumer Defensive,0.0
+BEI.F,2019-05-01,100.69067921764969,Beiersdorf AG,Nivea,14.0,1.0,Household & Personal products (company),Consumer Defensive,0.0
+BEI.F,2019-06-01,105.44140449152543,Beiersdorf AG,Nivea,14.0,1.0,Household & Personal products (company),Consumer Defensive,0.0
+BEI.F,2019-07-01,106.77041288076211,Beiersdorf AG,Nivea,14.0,1.0,Household & Personal products (company),Consumer Defensive,0.0
+BEI.F,2019-08-01,110.02839684380328,Beiersdorf AG,Nivea,14.0,1.0,Household & Personal products (company),Consumer Defensive,0.0
+BEI.F,2019-09-01,110.96461291734356,Beiersdorf AG,Nivea,14.0,1.0,Household & Personal products (company),Consumer Defensive,0.0
+BEI.F,2019-10-01,104.74385159330289,Beiersdorf AG,Nivea,14.0,1.0,Household & Personal products (company),Consumer Defensive,0.0
+BEI.F,2019-11-01,105.62444107836605,Beiersdorf AG,Nivea,14.0,1.0,Household & Personal products (company),Consumer Defensive,0.0
+BEI.F,2019-12-01,104.62659926574871,Beiersdorf AG,Nivea,14.0,1.0,Household & Personal products (company),Consumer Defensive,0.0
+BEI.F,2020-01-01,105.87870328108582,Beiersdorf AG,Nivea,14.0,1.0,Household & Personal products (company),Consumer Defensive,0.0
+BEI.F,2020-02-01,102.58978786593137,Beiersdorf AG,Nivea,14.0,1.0,Household & Personal products (company),Consumer Defensive,0.0
+BEI.F,2020-03-01,90.70687045822442,Beiersdorf AG,Nivea,14.0,1.0,Household & Personal products (company),Consumer Defensive,0.0
+BEI.F,2020-04-01,92.39923229774526,Beiersdorf AG,Nivea,14.0,1.0,Household & Personal products (company),Consumer Defensive,0.0
+BEI.F,2020-05-01,92.57521420234973,Beiersdorf AG,Nivea,14.0,1.0,Household & Personal products (company),Consumer Defensive,0.0
+BEI.F,2020-06-01,99.2090688097875,Beiersdorf AG,Nivea,14.0,1.0,Household & Personal products (company),Consumer Defensive,0.0
+BEI.F,2020-07-01,99.33671376829268,Beiersdorf AG,Nivea,14.0,1.0,Household & Personal products (company),Consumer Defensive,0.0
+BEI.F,2020-08-01,96.3146415491351,Beiersdorf AG,Nivea,14.0,1.0,Household & Personal products (company),Consumer Defensive,0.0
+BEI.F,2020-09-01,97.1089968856474,Beiersdorf AG,Nivea,14.0,1.0,Household & Personal products (company),Consumer Defensive,0.0
+BEI.F,2020-10-01,95.55130434936245,Beiersdorf AG,Nivea,14.0,1.0,Household & Personal products (company),Consumer Defensive,0.0
+BEI.F,2020-11-01,95.9273217434283,Beiersdorf AG,Nivea,14.0,1.0,Household & Personal products (company),Consumer Defensive,0.0
+BEI.F,2020-12-01,92.6049338731893,Beiersdorf AG,Nivea,14.0,1.0,Household & Personal products (company),Consumer Defensive,0.0
+BMW.F,2019-01-01,72.56369446574163,BMW AG St,BMW,3.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+BMW.F,2019-02-01,71.77157733471935,BMW AG St,BMW,3.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+BMW.F,2019-03-01,72.18629295210887,BMW AG St,BMW,3.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+BMW.F,2019-04-01,74.31800682962555,BMW AG St,BMW,3.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+BMW.F,2019-05-01,66.95285208301411,BMW AG St,BMW,3.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+BMW.F,2019-06-01,63.076498395317806,BMW AG St,BMW,3.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+BMW.F,2019-07-01,67.20186129265623,BMW AG St,BMW,3.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+BMW.F,2019-08-01,61.492201134631394,BMW AG St,BMW,3.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+BMW.F,2019-09-01,63.51185261090597,BMW AG St,BMW,3.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+BMW.F,2019-10-01,66.58346772290606,BMW AG St,BMW,3.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+BMW.F,2019-11-01,73.38567508874331,BMW AG St,BMW,3.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+BMW.F,2019-12-01,74.36710332522671,BMW AG St,BMW,3.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+BMW.F,2020-01-01,70.2317996774604,BMW AG St,BMW,3.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+BMW.F,2020-02-01,63.19021813488975,BMW AG St,BMW,3.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+BMW.F,2020-03-01,46.95090014259801,BMW AG St,BMW,3.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+BMW.F,2020-04-01,50.226629907954646,BMW AG St,BMW,3.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+BMW.F,2020-05-01,50.85824262527862,BMW AG St,BMW,3.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+BMW.F,2020-06-01,57.616831408095415,BMW AG St,BMW,3.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+BMW.F,2020-07-01,58.39190684788995,BMW AG St,BMW,3.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+BMW.F,2020-08-01,57.33755610864761,BMW AG St,BMW,3.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+BMW.F,2020-09-01,61.942859780974615,BMW AG St,BMW,3.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+BMW.F,2020-10-01,61.72960869750936,BMW AG St,BMW,3.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+BMW.F,2020-11-01,70.01795228919248,BMW AG St,BMW,3.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+BMW.F,2020-12-01,72.84381423636802,BMW AG St,BMW,3.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+CON.F,2019-01-01,131.5724317344485,Continental AG,Continental,13.0,1.0,Auto Parts,Consumer Cyclical,0.0
+CON.F,2019-02-01,137.85611923084892,Continental AG,Continental,13.0,1.0,Auto Parts,Consumer Cyclical,0.0
+CON.F,2019-03-01,141.4284461273752,Continental AG,Continental,13.0,1.0,Auto Parts,Consumer Cyclical,0.0
+CON.F,2019-04-01,150.1049116026061,Continental AG,Continental,13.0,1.0,Auto Parts,Consumer Cyclical,0.0
+CON.F,2019-05-01,134.20602594705883,Continental AG,Continental,13.0,1.0,Auto Parts,Consumer Cyclical,0.0
+CON.F,2019-06-01,126.13950487672217,Continental AG,Continental,13.0,1.0,Auto Parts,Consumer Cyclical,0.0
+CON.F,2019-07-01,123.67287861754569,Continental AG,Continental,13.0,1.0,Auto Parts,Consumer Cyclical,0.0
+CON.F,2019-08-01,112.99130130200633,Continental AG,Continental,13.0,1.0,Auto Parts,Consumer Cyclical,0.0
+CON.F,2019-09-01,120.03140121736006,Continental AG,Continental,13.0,1.0,Auto Parts,Consumer Cyclical,0.0
+CON.F,2019-10-01,119.98118244181478,Continental AG,Continental,13.0,1.0,Auto Parts,Consumer Cyclical,0.0
+CON.F,2019-11-01,125.16330065942327,Continental AG,Continental,13.0,1.0,Auto Parts,Consumer Cyclical,0.0
+CON.F,2019-12-01,117.53851591229113,Continental AG,Continental,13.0,1.0,Auto Parts,Consumer Cyclical,0.0
+CON.F,2020-01-01,108.48270571520509,Continental AG,Continental,13.0,1.0,Auto Parts,Consumer Cyclical,0.0
+CON.F,2020-02-01,106.0657258349241,Continental AG,Continental,13.0,1.0,Auto Parts,Consumer Cyclical,0.0
+CON.F,2020-03-01,72.33239801426234,Continental AG,Continental,13.0,1.0,Auto Parts,Consumer Cyclical,0.0
+CON.F,2020-04-01,71.36749783869806,Continental AG,Continental,13.0,1.0,Auto Parts,Consumer Cyclical,0.0
+CON.F,2020-05-01,79.45992357590416,Continental AG,Continental,13.0,1.0,Auto Parts,Consumer Cyclical,0.0
+CON.F,2020-06-01,91.7012483636319,Continental AG,Continental,13.0,1.0,Auto Parts,Consumer Cyclical,0.0
+CON.F,2020-07-01,86.82798534340878,Continental AG,Continental,13.0,1.0,Auto Parts,Consumer Cyclical,0.0
+CON.F,2020-08-01,88.80187736965044,Continental AG,Continental,13.0,1.0,Auto Parts,Consumer Cyclical,0.0
+CON.F,2020-09-01,91.11166190173354,Continental AG,Continental,13.0,1.0,Auto Parts,Consumer Cyclical,0.0
+CON.F,2020-10-01,97.90429771138871,Continental AG,Continental,13.0,1.0,Auto Parts,Consumer Cyclical,0.0
+CON.F,2020-11-01,109.09498866338481,Continental AG,Continental,13.0,1.0,Auto Parts,Consumer Cyclical,0.0
+CON.F,2020-12-01,117.70988998326271,Continental AG,Continental,13.0,1.0,Auto Parts,Consumer Cyclical,0.0
+DB1.F,2019-01-01,110.90580903755809,Deutsche Börse AG,,0.0,0.0,Financial Data & Stock Exchanges,Financial Services,0.0
+DB1.F,2019-02-01,112.27148896956153,Deutsche Börse AG,,0.0,0.0,Financial Data & Stock Exchanges,Financial Services,0.0
+DB1.F,2019-03-01,114.2482112996669,Deutsche Börse AG,,0.0,0.0,Financial Data & Stock Exchanges,Financial Services,0.0
+DB1.F,2019-04-01,116.10351916501483,Deutsche Börse AG,,0.0,0.0,Financial Data & Stock Exchanges,Financial Services,0.0
+DB1.F,2019-05-01,122.05840764893011,Deutsche Börse AG,,0.0,0.0,Financial Data & Stock Exchanges,Financial Services,0.0
+DB1.F,2019-06-01,125.25205499769199,Deutsche Börse AG,,0.0,0.0,Financial Data & Stock Exchanges,Financial Services,0.0
+DB1.F,2019-07-01,127.3237184873218,Deutsche Börse AG,,0.0,0.0,Financial Data & Stock Exchanges,Financial Services,0.0
+DB1.F,2019-08-01,129.3799981302365,Deutsche Börse AG,,0.0,0.0,Financial Data & Stock Exchanges,Financial Services,0.0
+DB1.F,2019-09-01,139.23953972142112,Deutsche Börse AG,,0.0,0.0,Financial Data & Stock Exchanges,Financial Services,0.0
+DB1.F,2019-10-01,141.10861396472197,Deutsche Börse AG,,0.0,0.0,Financial Data & Stock Exchanges,Financial Services,0.0
+DB1.F,2019-11-01,137.6686460614648,Deutsche Börse AG,,0.0,0.0,Financial Data & Stock Exchanges,Financial Services,0.0
+DB1.F,2019-12-01,138.78428697169352,Deutsche Börse AG,,0.0,0.0,Financial Data & Stock Exchanges,Financial Services,0.0
+DB1.F,2020-01-01,145.8874222311537,Deutsche Börse AG,,0.0,0.0,Financial Data & Stock Exchanges,Financial Services,0.0
+DB1.F,2020-02-01,148.76640474872428,Deutsche Börse AG,,0.0,0.0,Financial Data & Stock Exchanges,Financial Services,0.0
+DB1.F,2020-03-01,122.9509161172721,Deutsche Börse AG,,0.0,0.0,Financial Data & Stock Exchanges,Financial Services,0.0
+DB1.F,2020-04-01,132.31606279025516,Deutsche Börse AG,,0.0,0.0,Financial Data & Stock Exchanges,Financial Services,0.0
+DB1.F,2020-05-01,149.78186218864238,Deutsche Börse AG,,0.0,0.0,Financial Data & Stock Exchanges,Financial Services,0.0
+DB1.F,2020-06-01,155.6251557999617,Deutsche Börse AG,,0.0,0.0,Financial Data & Stock Exchanges,Financial Services,0.0
+DB1.F,2020-07-01,163.84396060295347,Deutsche Börse AG,,0.0,0.0,Financial Data & Stock Exchanges,Financial Services,0.0
+DB1.F,2020-08-01,156.18072080603176,Deutsche Börse AG,,0.0,0.0,Financial Data & Stock Exchanges,Financial Services,0.0
+DB1.F,2020-09-01,151.034847752107,Deutsche Börse AG,,0.0,0.0,Financial Data & Stock Exchanges,Financial Services,0.0
+DB1.F,2020-10-01,135.86695400991138,Deutsche Börse AG,,0.0,0.0,Financial Data & Stock Exchanges,Financial Services,0.0
+DB1.F,2020-11-01,133.10809730287122,Deutsche Börse AG,,0.0,0.0,Financial Data & Stock Exchanges,Financial Services,0.0
+DB1.F,2020-12-01,138.2984037144831,Deutsche Börse AG,,0.0,0.0,Financial Data & Stock Exchanges,Financial Services,0.0
+DBK.F,2019-01-01,7.734968874368018,Deutsche Bank AG,Deutsche Bank,22.0,1.0,Banks - Regional,Financial Services,0.0
+DBK.F,2019-02-01,7.645577154648058,Deutsche Bank AG,Deutsche Bank,22.0,1.0,Banks - Regional,Financial Services,0.0
+DBK.F,2019-03-01,7.843462404340248,Deutsche Bank AG,Deutsche Bank,22.0,1.0,Banks - Regional,Financial Services,0.0
+DBK.F,2019-04-01,7.494584535399927,Deutsche Bank AG,Deutsche Bank,22.0,1.0,Banks - Regional,Financial Services,0.0
+DBK.F,2019-05-01,6.673641761769922,Deutsche Bank AG,Deutsche Bank,22.0,1.0,Banks - Regional,Financial Services,0.0
+DBK.F,2019-06-01,6.215250138576589,Deutsche Bank AG,Deutsche Bank,22.0,1.0,Banks - Regional,Financial Services,0.0
+DBK.F,2019-07-01,6.899159349483463,Deutsche Bank AG,Deutsche Bank,22.0,1.0,Banks - Regional,Financial Services,0.0
+DBK.F,2019-08-01,6.424620732240536,Deutsche Bank AG,Deutsche Bank,22.0,1.0,Banks - Regional,Financial Services,0.0
+DBK.F,2019-09-01,7.244454616741927,Deutsche Bank AG,Deutsche Bank,22.0,1.0,Banks - Regional,Financial Services,0.0
+DBK.F,2019-10-01,6.792171380650737,Deutsche Bank AG,Deutsche Bank,22.0,1.0,Banks - Regional,Financial Services,0.0
+DBK.F,2019-11-01,6.737568630375343,Deutsche Bank AG,Deutsche Bank,22.0,1.0,Banks - Regional,Financial Services,0.0
+DBK.F,2019-12-01,6.746292394741747,Deutsche Bank AG,Deutsche Bank,22.0,1.0,Banks - Regional,Financial Services,0.0
+DBK.F,2020-01-01,7.7698059669769375,Deutsche Bank AG,Deutsche Bank,22.0,1.0,Banks - Regional,Financial Services,0.0
+DBK.F,2020-02-01,9.254115387746896,Deutsche Bank AG,Deutsche Bank,22.0,1.0,Banks - Regional,Financial Services,0.0
+DBK.F,2020-03-01,5.757523837586687,Deutsche Bank AG,Deutsche Bank,22.0,1.0,Banks - Regional,Financial Services,0.0
+DBK.F,2020-04-01,6.16070951335334,Deutsche Bank AG,Deutsche Bank,22.0,1.0,Banks - Regional,Financial Services,0.0
+DBK.F,2020-05-01,6.854860992532309,Deutsche Bank AG,Deutsche Bank,22.0,1.0,Banks - Regional,Financial Services,0.0
+DBK.F,2020-06-01,8.431957027842316,Deutsche Bank AG,Deutsche Bank,22.0,1.0,Banks - Regional,Financial Services,0.0
+DBK.F,2020-07-01,8.402298101608054,Deutsche Bank AG,Deutsche Bank,22.0,1.0,Banks - Regional,Financial Services,0.0
+DBK.F,2020-08-01,8.066346947896823,Deutsche Bank AG,Deutsche Bank,22.0,1.0,Banks - Regional,Financial Services,0.0
+DBK.F,2020-09-01,7.458166821615703,Deutsche Bank AG,Deutsche Bank,22.0,1.0,Banks - Regional,Financial Services,0.0
+DBK.F,2020-10-01,7.864596910508403,Deutsche Bank AG,Deutsche Bank,22.0,1.0,Banks - Regional,Financial Services,0.0
+DBK.F,2020-11-01,8.962914068164327,Deutsche Bank AG,Deutsche Bank,22.0,1.0,Banks - Regional,Financial Services,0.0
+DBK.F,2020-12-01,9.12526086466856,Deutsche Bank AG,Deutsche Bank,22.0,1.0,Banks - Regional,Financial Services,0.0
+DHL.DE,2019-01-01,25.14263396881934,Deutsche Post AG,DHL,5.0,1.0,Integrated Freight & Logistics,Industrials,1.0
+DHL.DE,2019-02-01,26.337276521150596,Deutsche Post AG,DHL,5.0,1.0,Integrated Freight & Logistics,Industrials,1.0
+DHL.DE,2019-03-01,28.57506924050111,Deutsche Post AG,DHL,5.0,1.0,Integrated Freight & Logistics,Industrials,1.0
+DHL.DE,2019-04-01,30.34177984195183,Deutsche Post AG,DHL,5.0,1.0,Integrated Freight & Logistics,Industrials,1.0
+DHL.DE,2019-05-01,28.30917682979039,Deutsche Post AG,DHL,5.0,1.0,Integrated Freight & Logistics,Industrials,1.0
+DHL.DE,2019-06-01,27.776742670133686,Deutsche Post AG,DHL,5.0,1.0,Integrated Freight & Logistics,Industrials,1.0
+DHL.DE,2019-07-01,29.639001350236864,Deutsche Post AG,DHL,5.0,1.0,Integrated Freight & Logistics,Industrials,1.0
+DHL.DE,2019-08-01,28.798758091957787,Deutsche Post AG,DHL,5.0,1.0,Integrated Freight & Logistics,Industrials,1.0
+DHL.DE,2019-09-01,30.367323589642403,Deutsche Post AG,DHL,5.0,1.0,Integrated Freight & Logistics,Industrials,1.0
+DHL.DE,2019-10-01,30.39372961785075,Deutsche Post AG,DHL,5.0,1.0,Integrated Freight & Logistics,Industrials,1.0
+DHL.DE,2019-11-01,33.567217271104894,Deutsche Post AG,DHL,5.0,1.0,Integrated Freight & Logistics,Industrials,1.0
+DHL.DE,2019-12-01,34.137006307714124,Deutsche Post AG,DHL,5.0,1.0,Integrated Freight & Logistics,Industrials,1.0
+DHL.DE,2020-01-01,33.39940977013406,Deutsche Post AG,DHL,5.0,1.0,Integrated Freight & Logistics,Industrials,1.0
+DHL.DE,2020-02-01,30.679607222533058,Deutsche Post AG,DHL,5.0,1.0,Integrated Freight & Logistics,Industrials,1.0
+DHL.DE,2020-03-01,22.840160552416663,Deutsche Post AG,DHL,5.0,1.0,Integrated Freight & Logistics,Industrials,1.0
+DHL.DE,2020-04-01,25.883168386629276,Deutsche Post AG,DHL,5.0,1.0,Integrated Freight & Logistics,Industrials,1.0
+DHL.DE,2020-05-01,27.404514092184254,Deutsche Post AG,DHL,5.0,1.0,Integrated Freight & Logistics,Industrials,1.0
+DHL.DE,2020-06-01,31.023308195300075,Deutsche Post AG,DHL,5.0,1.0,Integrated Freight & Logistics,Industrials,1.0
+DHL.DE,2020-07-01,34.413451200518125,Deutsche Post AG,DHL,5.0,1.0,Integrated Freight & Logistics,Industrials,1.0
+DHL.DE,2020-08-01,37.6999177752415,Deutsche Post AG,DHL,5.0,1.0,Integrated Freight & Logistics,Industrials,1.0
+DHL.DE,2020-09-01,38.58912691878724,Deutsche Post AG,DHL,5.0,1.0,Integrated Freight & Logistics,Industrials,1.0
+DHL.DE,2020-10-01,40.14211836123095,Deutsche Post AG,DHL,5.0,1.0,Integrated Freight & Logistics,Industrials,1.0
+DHL.DE,2020-11-01,39.648438865775454,Deutsche Post AG,DHL,5.0,1.0,Integrated Freight & Logistics,Industrials,1.0
+DHL.DE,2020-12-01,40.217370849605544,Deutsche Post AG,DHL,5.0,1.0,Integrated Freight & Logistics,Industrials,1.0
+DTE.F,2019-01-01,14.532024647805061,Deutsche Telekom AG,Telekom,2.0,1.0,Telecom Provider,Communication Services,0.0
+DTE.F,2019-02-01,14.413103489834935,Deutsche Telekom AG,Telekom,2.0,1.0,Telecom Provider,Communication Services,0.0
+DTE.F,2019-03-01,15.448541089893137,Deutsche Telekom AG,Telekom,2.0,1.0,Telecom Provider,Communication Services,0.0
+DTE.F,2019-04-01,14.875563614437688,Deutsche Telekom AG,Telekom,2.0,1.0,Telecom Provider,Communication Services,0.0
+DTE.F,2019-05-01,15.038637093818261,Deutsche Telekom AG,Telekom,2.0,1.0,Telecom Provider,Communication Services,0.0
+DTE.F,2019-06-01,15.341955423519915,Deutsche Telekom AG,Telekom,2.0,1.0,Telecom Provider,Communication Services,0.0
+DTE.F,2019-07-01,15.064036765871235,Deutsche Telekom AG,Telekom,2.0,1.0,Telecom Provider,Communication Services,0.0
+DTE.F,2019-08-01,14.75219745473202,Deutsche Telekom AG,Telekom,2.0,1.0,Telecom Provider,Communication Services,0.0
+DTE.F,2019-09-01,15.227264200820864,Deutsche Telekom AG,Telekom,2.0,1.0,Telecom Provider,Communication Services,0.0
+DTE.F,2019-10-01,15.707903226264914,Deutsche Telekom AG,Telekom,2.0,1.0,Telecom Provider,Communication Services,0.0
+DTE.F,2019-11-01,15.268899180611692,Deutsche Telekom AG,Telekom,2.0,1.0,Telecom Provider,Communication Services,0.0
+DTE.F,2019-12-01,14.852924047557437,Deutsche Telekom AG,Telekom,2.0,1.0,Telecom Provider,Communication Services,0.0
+DTE.F,2020-01-01,14.700259406276789,Deutsche Telekom AG,Telekom,2.0,1.0,Telecom Provider,Communication Services,0.0
+DTE.F,2020-02-01,15.535208668476464,Deutsche Telekom AG,Telekom,2.0,1.0,Telecom Provider,Communication Services,0.0
+DTE.F,2020-03-01,12.424825373649403,Deutsche Telekom AG,Telekom,2.0,1.0,Telecom Provider,Communication Services,0.0
+DTE.F,2020-04-01,12.436497311190418,Deutsche Telekom AG,Telekom,2.0,1.0,Telecom Provider,Communication Services,0.0
+DTE.F,2020-05-01,13.68314250876336,Deutsche Telekom AG,Telekom,2.0,1.0,Telecom Provider,Communication Services,0.0
+DTE.F,2020-06-01,14.958317961443397,Deutsche Telekom AG,Telekom,2.0,1.0,Telecom Provider,Communication Services,0.0
+DTE.F,2020-07-01,14.968653913907035,Deutsche Telekom AG,Telekom,2.0,1.0,Telecom Provider,Communication Services,0.0
+DTE.F,2020-08-01,15.003922034268314,Deutsche Telekom AG,Telekom,2.0,1.0,Telecom Provider,Communication Services,0.0
+DTE.F,2020-09-01,14.955795010368817,Deutsche Telekom AG,Telekom,2.0,1.0,Telecom Provider,Communication Services,0.0
+DTE.F,2020-10-01,13.571384577437383,Deutsche Telekom AG,Telekom,2.0,1.0,Telecom Provider,Communication Services,0.0
+DTE.F,2020-11-01,14.699480104556525,Deutsche Telekom AG,Telekom,2.0,1.0,Telecom Provider,Communication Services,0.0
+DTE.F,2020-12-01,14.95990934179841,Deutsche Telekom AG,Telekom,2.0,1.0,Telecom Provider,Communication Services,0.0
+EOAN.F,2019-01-01,9.228247760013984,E.ON SE,E.ON,18.0,1.0,Utilities - Diversified,Utilities,0.0
+EOAN.F,2019-02-01,9.648354951809836,E.ON SE,E.ON,18.0,1.0,Utilities - Diversified,Utilities,0.0
+EOAN.F,2019-03-01,9.71479725001501,E.ON SE,E.ON,18.0,1.0,Utilities - Diversified,Utilities,0.0
+EOAN.F,2019-04-01,9.816934494096904,E.ON SE,E.ON,18.0,1.0,Utilities - Diversified,Utilities,0.0
+EOAN.F,2019-05-01,9.39233012971935,E.ON SE,E.ON,18.0,1.0,Utilities - Diversified,Utilities,0.0
+EOAN.F,2019-06-01,9.749308496885881,E.ON SE,E.ON,18.0,1.0,Utilities - Diversified,Utilities,0.0
+EOAN.F,2019-07-01,9.444460356025377,E.ON SE,E.ON,18.0,1.0,Utilities - Diversified,Utilities,0.0
+EOAN.F,2019-08-01,8.539893275423777,E.ON SE,E.ON,18.0,1.0,Utilities - Diversified,Utilities,0.0
+EOAN.F,2019-09-01,8.7990327772228,E.ON SE,E.ON,18.0,1.0,Utilities - Diversified,Utilities,0.0
+EOAN.F,2019-10-01,8.881271496594218,E.ON SE,E.ON,18.0,1.0,Utilities - Diversified,Utilities,0.0
+EOAN.F,2019-11-01,9.120223222800279,E.ON SE,E.ON,18.0,1.0,Utilities - Diversified,Utilities,0.0
+EOAN.F,2019-12-01,9.397523237089185,E.ON SE,E.ON,18.0,1.0,Utilities - Diversified,Utilities,0.0
+EOAN.F,2020-01-01,10.009444550216626,E.ON SE,E.ON,18.0,1.0,Utilities - Diversified,Utilities,0.0
+EOAN.F,2020-02-01,10.875025659232918,E.ON SE,E.ON,18.0,1.0,Utilities - Diversified,Utilities,0.0
+EOAN.F,2020-03-01,9.244365961293067,E.ON SE,E.ON,18.0,1.0,Utilities - Diversified,Utilities,0.0
+EOAN.F,2020-04-01,8.786148956027379,E.ON SE,E.ON,18.0,1.0,Utilities - Diversified,Utilities,0.0
+EOAN.F,2020-05-01,9.481063574946042,E.ON SE,E.ON,18.0,1.0,Utilities - Diversified,Utilities,0.0
+EOAN.F,2020-06-01,9.954823583065279,E.ON SE,E.ON,18.0,1.0,Utilities - Diversified,Utilities,0.0
+EOAN.F,2020-07-01,10.27806539232717,E.ON SE,E.ON,18.0,1.0,Utilities - Diversified,Utilities,0.0
+EOAN.F,2020-08-01,9.996208153934218,E.ON SE,E.ON,18.0,1.0,Utilities - Diversified,Utilities,0.0
+EOAN.F,2020-09-01,9.742532448359158,E.ON SE,E.ON,18.0,1.0,Utilities - Diversified,Utilities,0.0
+EOAN.F,2020-10-01,9.403913376915018,E.ON SE,E.ON,18.0,1.0,Utilities - Diversified,Utilities,0.0
+EOAN.F,2020-11-01,9.186252434662999,E.ON SE,E.ON,18.0,1.0,Utilities - Diversified,Utilities,0.0
+EOAN.F,2020-12-01,9.005576178781459,E.ON SE,E.ON,18.0,1.0,Utilities - Diversified,Utilities,0.0
+FME.F,2019-01-01,60.538737910650134,Fresenius Medical Care AG & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FME.F,2019-02-01,67.9674493842544,Fresenius Medical Care AG & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FME.F,2019-03-01,69.04304902180989,Fresenius Medical Care AG & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FME.F,2019-04-01,73.09768965053519,Fresenius Medical Care AG & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FME.F,2019-05-01,71.02587782358778,Fresenius Medical Care AG & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FME.F,2019-06-01,67.94582048893953,Fresenius Medical Care AG & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FME.F,2019-07-01,66.80041383202962,Fresenius Medical Care AG & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FME.F,2019-08-01,60.22453844102507,Fresenius Medical Care AG & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FME.F,2019-09-01,62.34306864215053,Fresenius Medical Care AG & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FME.F,2019-10-01,60.57295967820314,Fresenius Medical Care AG & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FME.F,2019-11-01,66.86056639706432,Fresenius Medical Care AG & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FME.F,2019-12-01,65.4321661618008,Fresenius Medical Care AG & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FME.F,2020-01-01,68.85426241745745,Fresenius Medical Care AG & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FME.F,2020-02-01,72.64330667454776,Fresenius Medical Care AG & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FME.F,2020-03-01,60.4708078242583,Fresenius Medical Care AG & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FME.F,2020-04-01,65.13781762354948,Fresenius Medical Care AG & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FME.F,2020-05-01,73.15819451833252,Fresenius Medical Care AG & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FME.F,2020-06-01,76.18260120285387,Fresenius Medical Care AG & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FME.F,2020-07-01,76.47313082000753,Fresenius Medical Care AG & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FME.F,2020-08-01,73.02564723636834,Fresenius Medical Care AG & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FME.F,2020-09-01,72.02910719971894,Fresenius Medical Care AG & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FME.F,2020-10-01,68.62799880544985,Fresenius Medical Care AG & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FME.F,2020-11-01,70.87358194646501,Fresenius Medical Care AG & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FME.F,2020-12-01,68.39884976202963,Fresenius Medical Care AG & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FRE.F,2019-01-01,43.83501772598556,Fresenius SE & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FRE.F,2019-02-01,48.151548493380275,Fresenius SE & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FRE.F,2019-03-01,48.4810287092686,Fresenius SE & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FRE.F,2019-04-01,51.025287498221076,Fresenius SE & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FRE.F,2019-05-01,49.37449092615986,Fresenius SE & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FRE.F,2019-06-01,46.98178098547821,Fresenius SE & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FRE.F,2019-07-01,46.09530655991579,Fresenius SE & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FRE.F,2019-08-01,43.45821702288998,Fresenius SE & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FRE.F,2019-09-01,44.50694966510153,Fresenius SE & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FRE.F,2019-10-01,43.74944861395342,Fresenius SE & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FRE.F,2019-11-01,48.69428577587332,Fresenius SE & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FRE.F,2019-12-01,49.801219454028036,Fresenius SE & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FRE.F,2020-01-01,48.72653370041538,Fresenius SE & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FRE.F,2020-02-01,46.667008126466385,Fresenius SE & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FRE.F,2020-03-01,32.290062134062794,Fresenius SE & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FRE.F,2020-04-01,37.63263213110193,Fresenius SE & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FRE.F,2020-05-01,41.372640433112416,Fresenius SE & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FRE.F,2020-06-01,43.989650579054796,Fresenius SE & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FRE.F,2020-07-01,44.3268797537933,Fresenius SE & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FRE.F,2020-08-01,39.51133940028339,Fresenius SE & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FRE.F,2020-09-01,38.67632145840597,Fresenius SE & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FRE.F,2020-10-01,34.124424558035685,Fresenius SE & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FRE.F,2020-11-01,36.12029861538845,Fresenius SE & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+FRE.F,2020-12-01,38.047561647561714,Fresenius SE & Co. KGaA,,0.0,0.0,Medical Care Facilities,Healthcare,0.0
+HEI.F,2019-01-01,58.19084507711824,Heidelberg Materials AG,,0.0,0.0,Building Materials,Basic Materials,0.0
+HEI.F,2019-02-01,62.22662259333647,Heidelberg Materials AG,,0.0,0.0,Building Materials,Basic Materials,0.0
+HEI.F,2019-03-01,64.99045307083523,Heidelberg Materials AG,,0.0,0.0,Building Materials,Basic Materials,0.0
+HEI.F,2019-04-01,70.3074638720306,Heidelberg Materials AG,,0.0,0.0,Building Materials,Basic Materials,0.0
+HEI.F,2019-05-01,69.80033565571382,Heidelberg Materials AG,,0.0,0.0,Building Materials,Basic Materials,0.0
+HEI.F,2019-06-01,69.990167962501,Heidelberg Materials AG,,0.0,0.0,Building Materials,Basic Materials,0.0
+HEI.F,2019-07-01,69.44945600723688,Heidelberg Materials AG,,0.0,0.0,Building Materials,Basic Materials,0.0
+HEI.F,2019-08-01,60.64903605497032,Heidelberg Materials AG,,0.0,0.0,Building Materials,Basic Materials,0.0
+HEI.F,2019-09-01,66.39374270352354,Heidelberg Materials AG,,0.0,0.0,Building Materials,Basic Materials,0.0
+HEI.F,2019-10-01,63.4443333778517,Heidelberg Materials AG,,0.0,0.0,Building Materials,Basic Materials,0.0
+HEI.F,2019-11-01,66.18002289922309,Heidelberg Materials AG,,0.0,0.0,Building Materials,Basic Materials,0.0
+HEI.F,2019-12-01,66.88684467873105,Heidelberg Materials AG,,0.0,0.0,Building Materials,Basic Materials,0.0
+HEI.F,2020-01-01,63.76838970659701,Heidelberg Materials AG,,0.0,0.0,Building Materials,Basic Materials,0.0
+HEI.F,2020-02-01,60.20546669346274,Heidelberg Materials AG,,0.0,0.0,Building Materials,Basic Materials,0.0
+HEI.F,2020-03-01,38.262204838322475,Heidelberg Materials AG,,0.0,0.0,Building Materials,Basic Materials,0.0
+HEI.F,2020-04-01,41.18606247074063,Heidelberg Materials AG,,0.0,0.0,Building Materials,Basic Materials,0.0
+HEI.F,2020-05-01,42.49656887072976,Heidelberg Materials AG,,0.0,0.0,Building Materials,Basic Materials,0.0
+HEI.F,2020-06-01,49.259779165510295,Heidelberg Materials AG,,0.0,0.0,Building Materials,Basic Materials,0.0
+HEI.F,2020-07-01,49.65468192734683,Heidelberg Materials AG,,0.0,0.0,Building Materials,Basic Materials,0.0
+HEI.F,2020-08-01,51.268000904331736,Heidelberg Materials AG,,0.0,0.0,Building Materials,Basic Materials,0.0
+HEI.F,2020-09-01,52.71278581370584,Heidelberg Materials AG,,0.0,0.0,Building Materials,Basic Materials,0.0
+HEI.F,2020-10-01,53.34438425828881,Heidelberg Materials AG,,0.0,0.0,Building Materials,Basic Materials,0.0
+HEI.F,2020-11-01,57.94424576336069,Heidelberg Materials AG,,0.0,0.0,Building Materials,Basic Materials,0.0
+HEI.F,2020-12-01,60.1572746241361,Heidelberg Materials AG,,0.0,0.0,Building Materials,Basic Materials,0.0
+HEN3.F,2019-01-01,87.87505184070132,,,,,,,
+HEN3.F,2019-02-01,87.93197719290649,,,,,,,
+HEN3.F,2019-03-01,89.33078635499095,,,,,,,
+HEN3.F,2019-04-01,88.84860235588731,,,,,,,
+HEN3.F,2019-05-01,86.17873049799255,,,,,,,
+HEN3.F,2019-06-01,85.59908929458037,,,,,,,
+HEN3.F,2019-07-01,89.99144806513038,,,,,,,
+HEN3.F,2019-08-01,87.72342574059758,,,,,,,
+HEN3.F,2019-09-01,92.52643029645981,,,,,,,
+HEN3.F,2019-10-01,92.87878651466056,,,,,,,
+HEN3.F,2019-11-01,95.092138868666,,,,,,,
+HEN3.F,2019-12-01,90.9330966976091,,,,,,,
+HEN3.F,2020-01-01,92.67766833877116,,,,,,,
+HEN3.F,2020-02-01,90.10831115173185,,,,,,,
+HEN3.F,2020-03-01,72.82927404357312,,,,,,,
+HEN3.F,2020-04-01,77.35834993304108,,,,,,,
+HEN3.F,2020-05-01,78.24150445200236,,,,,,,
+HEN3.F,2020-06-01,83.1169086705791,,,,,,,
+HEN3.F,2020-07-01,85.19145251243778,,,,,,,
+HEN3.F,2020-08-01,85.98305748786306,,,,,,,
+HEN3.F,2020-09-01,88.29372671040359,,,,,,,
+HEN3.F,2020-10-01,89.94703913036601,,,,,,,
+HEN3.F,2020-11-01,89.5066954148505,,,,,,,
+HEN3.F,2020-12-01,89.96609777630337,,,,,,,
+IFX.F,2019-01-01,18.488469741403268,Infineon Technology AG,,0.0,0.0,,Technology,0.0
+IFX.F,2019-02-01,19.542499044901867,Infineon Technology AG,,0.0,0.0,,Technology,0.0
+IFX.F,2019-03-01,18.94995554871265,Infineon Technology AG,,0.0,0.0,,Technology,0.0
+IFX.F,2019-04-01,20.35380758056581,Infineon Technology AG,,0.0,0.0,,Technology,0.0
+IFX.F,2019-05-01,17.99120777814558,Infineon Technology AG,,0.0,0.0,,Technology,0.0
+IFX.F,2019-06-01,14.745638009654229,Infineon Technology AG,,0.0,0.0,,Technology,0.0
+IFX.F,2019-07-01,16.86212512624952,Infineon Technology AG,,0.0,0.0,,Technology,0.0
+IFX.F,2019-08-01,15.85046350549157,Infineon Technology AG,,0.0,0.0,,Technology,0.0
+IFX.F,2019-09-01,17.474536401109674,Infineon Technology AG,,0.0,0.0,,Technology,0.0
+IFX.F,2019-10-01,16.936065305470244,Infineon Technology AG,,0.0,0.0,,Technology,0.0
+IFX.F,2019-11-01,19.113634569935677,Infineon Technology AG,,0.0,0.0,,Technology,0.0
+IFX.F,2019-12-01,20.37634368413018,Infineon Technology AG,,0.0,0.0,,Technology,0.0
+IFX.F,2020-01-01,21.10873107866871,Infineon Technology AG,,0.0,0.0,,Technology,0.0
+IFX.F,2020-02-01,20.946026253722607,Infineon Technology AG,,0.0,0.0,,Technology,0.0
+IFX.F,2020-03-01,13.488956022554362,Infineon Technology AG,,0.0,0.0,,Technology,0.0
+IFX.F,2020-04-01,15.651017726740848,Infineon Technology AG,,0.0,0.0,,Technology,0.0
+IFX.F,2020-05-01,18.28871061768187,Infineon Technology AG,,0.0,0.0,,Technology,0.0
+IFX.F,2020-06-01,20.466743591861277,Infineon Technology AG,,0.0,0.0,,Technology,0.0
+IFX.F,2020-07-01,22.098562846648665,Infineon Technology AG,,0.0,0.0,,Technology,0.0
+IFX.F,2020-08-01,22.576368782440213,Infineon Technology AG,,0.0,0.0,,Technology,0.0
+IFX.F,2020-09-01,23.585388879735056,Infineon Technology AG,,0.0,0.0,,Technology,0.0
+IFX.F,2020-10-01,25.935438208952196,Infineon Technology AG,,0.0,0.0,,Technology,0.0
+IFX.F,2020-11-01,27.123238156405993,Infineon Technology AG,,0.0,0.0,,Technology,0.0
+IFX.F,2020-12-01,30.152803575543413,Infineon Technology AG,,0.0,0.0,,Technology,0.0
+LIN.F,2019-01-01,139.27067724343664,Linde,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+LIN.F,2019-02-01,147.354372189074,Linde,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+LIN.F,2019-03-01,152.5040091395429,Linde,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+LIN.F,2019-04-01,160.86014240545765,Linde,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+LIN.F,2019-05-01,162.47913889504372,Linde,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+LIN.F,2019-06-01,176.1344186753758,Linde,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+LIN.F,2019-07-01,180.309625115291,Linde,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+LIN.F,2019-08-01,169.71315048239728,Linde,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+LIN.F,2019-09-01,172.3562237007412,Linde,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+LIN.F,2019-10-01,174.44115627407962,Linde,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+LIN.F,2019-11-01,185.47009691177885,Linde,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+LIN.F,2019-12-01,186.91011324636796,Linde,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+LIN.F,2020-01-01,188.75105595010413,Linde,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+LIN.F,2020-02-01,188.45569057994655,Linde,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+LIN.F,2020-03-01,154.44308238483794,Linde,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+LIN.F,2020-04-01,166.69760666775576,Linde,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+LIN.F,2020-05-01,170.599684614937,Linde,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+LIN.F,2020-06-01,186.21288315474087,Linde,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+LIN.F,2020-07-01,203.94406745896347,Linde,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+LIN.F,2020-08-01,209.71205416539368,Linde,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+LIN.F,2020-09-01,208.49984601353452,Linde,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+LIN.F,2020-10-01,194.99058687968892,Linde,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+LIN.F,2020-11-01,215.99652491192407,Linde,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+LIN.F,2020-12-01,207.92503731220742,Linde,,0.0,0.0,Speciality Chemicals,Basic Materials,0.0
+MBG.F,2019-01-01,49.4207199498943,Mercedes Benz Group AG (former Daimler),Mercedes-Benz,4.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+MBG.F,2019-02-01,50.792877223279355,Mercedes Benz Group AG (former Daimler),Mercedes-Benz,4.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+MBG.F,2019-03-01,51.457965074100834,Mercedes Benz Group AG (former Daimler),Mercedes-Benz,4.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+MBG.F,2019-04-01,56.578004705490905,Mercedes Benz Group AG (former Daimler),Mercedes-Benz,4.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+MBG.F,2019-05-01,50.84357397598839,Mercedes Benz Group AG (former Daimler),Mercedes-Benz,4.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+MBG.F,2019-06-01,48.008032546181454,Mercedes Benz Group AG (former Daimler),Mercedes-Benz,4.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+MBG.F,2019-07-01,47.65594098902566,Mercedes Benz Group AG (former Daimler),Mercedes-Benz,4.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+MBG.F,2019-08-01,42.696448899508034,Mercedes Benz Group AG (former Daimler),Mercedes-Benz,4.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+MBG.F,2019-09-01,46.30893805800188,Mercedes Benz Group AG (former Daimler),Mercedes-Benz,4.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+MBG.F,2019-10-01,49.103516141705555,Mercedes Benz Group AG (former Daimler),Mercedes-Benz,4.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+MBG.F,2019-11-01,52.00356626858819,Mercedes Benz Group AG (former Daimler),Mercedes-Benz,4.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+MBG.F,2019-12-01,49.81594334776839,Mercedes Benz Group AG (former Daimler),Mercedes-Benz,4.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+MBG.F,2020-01-01,45.4802902942491,Mercedes Benz Group AG (former Daimler),Mercedes-Benz,4.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+MBG.F,2020-02-01,41.21791909650624,Mercedes Benz Group AG (former Daimler),Mercedes-Benz,4.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+MBG.F,2020-03-01,27.625271412237655,Mercedes Benz Group AG (former Daimler),Mercedes-Benz,4.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+MBG.F,2020-04-01,28.685351341186085,Mercedes Benz Group AG (former Daimler),Mercedes-Benz,4.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+MBG.F,2020-05-01,31.201551556290664,Mercedes Benz Group AG (former Daimler),Mercedes-Benz,4.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+MBG.F,2020-06-01,37.15530439410579,Mercedes Benz Group AG (former Daimler),Mercedes-Benz,4.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+MBG.F,2020-07-01,38.45271783832155,Mercedes Benz Group AG (former Daimler),Mercedes-Benz,4.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+MBG.F,2020-08-01,41.65989342638549,Mercedes Benz Group AG (former Daimler),Mercedes-Benz,4.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+MBG.F,2020-09-01,44.73183386554023,Mercedes Benz Group AG (former Daimler),Mercedes-Benz,4.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+MBG.F,2020-10-01,47.26986255804609,Mercedes Benz Group AG (former Daimler),Mercedes-Benz,4.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+MBG.F,2020-11-01,52.90649997219391,Mercedes Benz Group AG (former Daimler),Mercedes-Benz,4.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+MBG.F,2020-12-01,57.54892162395941,Mercedes Benz Group AG (former Daimler),Mercedes-Benz,4.0,1.0,Auto Manufacturers,Consumer Cyclical,0.0
+MRK.F,2019-01-01,90.57502081742275,Merck KGaA,,0.0,0.0,Drug Manufacturers – Speciality & Generic,Healthcare,0.0
+MRK.F,2019-02-01,95.23950705177111,Merck KGaA,,0.0,0.0,Drug Manufacturers – Speciality & Generic,Healthcare,0.0
+MRK.F,2019-03-01,98.89218399073015,Merck KGaA,,0.0,0.0,Drug Manufacturers – Speciality & Generic,Healthcare,0.0
+MRK.F,2019-04-01,97.64724723743245,Merck KGaA,,0.0,0.0,Drug Manufacturers – Speciality & Generic,Healthcare,0.0
+MRK.F,2019-05-01,92.15748414297659,Merck KGaA,,0.0,0.0,Drug Manufacturers – Speciality & Generic,Healthcare,0.0
+MRK.F,2019-06-01,91.3277522569043,Merck KGaA,,0.0,0.0,Drug Manufacturers – Speciality & Generic,Healthcare,0.0
+MRK.F,2019-07-01,93.64289738050948,Merck KGaA,,0.0,0.0,Drug Manufacturers – Speciality & Generic,Healthcare,0.0
+MRK.F,2019-08-01,94.72428509611973,Merck KGaA,,0.0,0.0,Drug Manufacturers – Speciality & Generic,Healthcare,0.0
+MRK.F,2019-09-01,100.76370360470985,Merck KGaA,,0.0,0.0,Drug Manufacturers – Speciality & Generic,Healthcare,0.0
+MRK.F,2019-10-01,104.50384110289309,Merck KGaA,,0.0,0.0,Drug Manufacturers – Speciality & Generic,Healthcare,0.0
+MRK.F,2019-11-01,107.44271594367417,Merck KGaA,,0.0,0.0,Drug Manufacturers – Speciality & Generic,Healthcare,0.0
+MRK.F,2019-12-01,103.98531300322261,Merck KGaA,,0.0,0.0,Drug Manufacturers – Speciality & Generic,Healthcare,0.0
+MRK.F,2020-01-01,114.22363613549517,Merck KGaA,,0.0,0.0,Drug Manufacturers – Speciality & Generic,Healthcare,0.0
+MRK.F,2020-02-01,116.99750285394909,Merck KGaA,,0.0,0.0,Drug Manufacturers – Speciality & Generic,Healthcare,0.0
+MRK.F,2020-03-01,94.61841548059583,Merck KGaA,,0.0,0.0,Drug Manufacturers – Speciality & Generic,Healthcare,0.0
+MRK.F,2020-04-01,98.24424172443273,Merck KGaA,,0.0,0.0,Drug Manufacturers – Speciality & Generic,Healthcare,0.0
+MRK.F,2020-05-01,104.6543726606899,Merck KGaA,,0.0,0.0,Drug Manufacturers – Speciality & Generic,Healthcare,0.0
+MRK.F,2020-06-01,103.05124519236176,Merck KGaA,,0.0,0.0,Drug Manufacturers – Speciality & Generic,Healthcare,0.0
+MRK.F,2020-07-01,108.61436821817195,Merck KGaA,,0.0,0.0,Drug Manufacturers – Speciality & Generic,Healthcare,0.0
+MRK.F,2020-08-01,113.38643788008066,Merck KGaA,,0.0,0.0,Drug Manufacturers – Speciality & Generic,Healthcare,0.0
+MRK.F,2020-09-01,121.72509325695813,Merck KGaA,,0.0,0.0,Drug Manufacturers – Speciality & Generic,Healthcare,0.0
+MRK.F,2020-10-01,129.04443239469285,Merck KGaA,,0.0,0.0,Drug Manufacturers – Speciality & Generic,Healthcare,0.0
+MRK.F,2020-11-01,133.7526145203645,Merck KGaA,,0.0,0.0,Drug Manufacturers – Speciality & Generic,Healthcare,0.0
+MRK.F,2020-12-01,136.00085995517915,Merck KGaA,,0.0,0.0,Drug Manufacturers – Speciality & Generic,Healthcare,0.0
+MTX.F,2019-01-01,174.4391004134948,MTU Aero Engines AG,,0.0,0.0,Aerospace & Defense,Industrials,0.0
+MTX.F,2019-02-01,192.4073784796905,MTU Aero Engines AG,,0.0,0.0,Aerospace & Defense,Industrials,0.0
+MTX.F,2019-03-01,195.98710258653847,MTU Aero Engines AG,,0.0,0.0,Aerospace & Defense,Industrials,0.0
+MTX.F,2019-04-01,206.89991369083802,MTU Aero Engines AG,,0.0,0.0,Aerospace & Defense,Industrials,0.0
+MTX.F,2019-05-01,199.87372133657243,MTU Aero Engines AG,,0.0,0.0,Aerospace & Defense,Industrials,0.0
+MTX.F,2019-06-01,203.40826045064378,MTU Aero Engines AG,,0.0,0.0,Aerospace & Defense,Industrials,0.0
+MTX.F,2019-07-01,221.77400016339354,MTU Aero Engines AG,,0.0,0.0,Aerospace & Defense,Industrials,0.0
+MTX.F,2019-08-01,236.17820815350436,MTU Aero Engines AG,,0.0,0.0,Aerospace & Defense,Industrials,0.0
+MTX.F,2019-09-01,245.42739257976052,MTU Aero Engines AG,,0.0,0.0,Aerospace & Defense,Industrials,0.0
+MTX.F,2019-10-01,241.08598563932404,MTU Aero Engines AG,,0.0,0.0,Aerospace & Defense,Industrials,0.0
+MTX.F,2019-11-01,240.72020994068106,MTU Aero Engines AG,,0.0,0.0,Aerospace & Defense,Industrials,0.0
+MTX.F,2019-12-01,254.16799745738192,MTU Aero Engines AG,,0.0,0.0,Aerospace & Defense,Industrials,0.0
+MTX.F,2020-01-01,274.70488384403535,MTU Aero Engines AG,,0.0,0.0,Aerospace & Defense,Industrials,0.0
+MTX.F,2020-02-01,247.7580759716249,MTU Aero Engines AG,,0.0,0.0,Aerospace & Defense,Industrials,0.0
+MTX.F,2020-03-01,147.96205598599695,MTU Aero Engines AG,,0.0,0.0,Aerospace & Defense,Industrials,0.0
+MTX.F,2020-04-01,119.72795301269781,MTU Aero Engines AG,,0.0,0.0,Aerospace & Defense,Industrials,0.0
+MTX.F,2020-05-01,134.00505656975767,MTU Aero Engines AG,,0.0,0.0,Aerospace & Defense,Industrials,0.0
+MTX.F,2020-06-01,165.40043960656084,MTU Aero Engines AG,,0.0,0.0,Aerospace & Defense,Industrials,0.0
+MTX.F,2020-07-01,152.47708854910618,MTU Aero Engines AG,,0.0,0.0,Aerospace & Defense,Industrials,0.0
+MTX.F,2020-08-01,150.57982960900432,MTU Aero Engines AG,,0.0,0.0,Aerospace & Defense,Industrials,0.0
+MTX.F,2020-09-01,146.5209878539743,MTU Aero Engines AG,,0.0,0.0,Aerospace & Defense,Industrials,0.0
+MTX.F,2020-10-01,154.08547041958303,MTU Aero Engines AG,,0.0,0.0,Aerospace & Defense,Industrials,0.0
+MTX.F,2020-11-01,189.90872994719243,MTU Aero Engines AG,,0.0,0.0,Aerospace & Defense,Industrials,0.0
+MTX.F,2020-12-01,208.56131831960104,MTU Aero Engines AG,,0.0,0.0,Aerospace & Defense,Industrials,0.0
+MUV2.F,2019-01-01,192.59401971116552,Münchener Rückversicherung-Gesellschaft,"ERGO, Munich Re…",0.0,0.0,Insurance - Reinsurance,Financial Services,0.0
+MUV2.F,2019-02-01,202.12350871298787,Münchener Rückversicherung-Gesellschaft,"ERGO, Munich Re…",0.0,0.0,Insurance - Reinsurance,Financial Services,0.0
+MUV2.F,2019-03-01,212.70692079439047,Münchener Rückversicherung-Gesellschaft,"ERGO, Munich Re…",0.0,0.0,Insurance - Reinsurance,Financial Services,0.0
+MUV2.F,2019-04-01,219.0457606556436,Münchener Rückversicherung-Gesellschaft,"ERGO, Munich Re…",0.0,0.0,Insurance - Reinsurance,Financial Services,0.0
+MUV2.F,2019-05-01,213.8735738214113,Münchener Rückversicherung-Gesellschaft,"ERGO, Munich Re…",0.0,0.0,Insurance - Reinsurance,Financial Services,0.0
+MUV2.F,2019-06-01,222.22463305744026,Münchener Rückversicherung-Gesellschaft,"ERGO, Munich Re…",0.0,0.0,Insurance - Reinsurance,Financial Services,0.0
+MUV2.F,2019-07-01,224.07850310443308,Münchener Rückversicherung-Gesellschaft,"ERGO, Munich Re…",0.0,0.0,Insurance - Reinsurance,Financial Services,0.0
+MUV2.F,2019-08-01,215.8598114594615,Münchener Rückversicherung-Gesellschaft,"ERGO, Munich Re…",0.0,0.0,Insurance - Reinsurance,Financial Services,0.0
+MUV2.F,2019-09-01,229.85762356557547,Münchener Rückversicherung-Gesellschaft,"ERGO, Munich Re…",0.0,0.0,Insurance - Reinsurance,Financial Services,0.0
+MUV2.F,2019-10-01,245.60230532573297,Münchener Rückversicherung-Gesellschaft,"ERGO, Munich Re…",0.0,0.0,Insurance - Reinsurance,Financial Services,0.0
+MUV2.F,2019-11-01,254.87904644321992,Münchener Rückversicherung-Gesellschaft,"ERGO, Munich Re…",0.0,0.0,Insurance - Reinsurance,Financial Services,0.0
+MUV2.F,2019-12-01,262.9836939654811,Münchener Rückversicherung-Gesellschaft,"ERGO, Munich Re…",0.0,0.0,Insurance - Reinsurance,Financial Services,0.0
+MUV2.F,2020-01-01,268.6979085646077,Münchener Rückversicherung-Gesellschaft,"ERGO, Munich Re…",0.0,0.0,Insurance - Reinsurance,Financial Services,0.0
+MUV2.F,2020-02-01,253.753893733859,Münchener Rückversicherung-Gesellschaft,"ERGO, Munich Re…",0.0,0.0,Insurance - Reinsurance,Financial Services,0.0
+MUV2.F,2020-03-01,190.14165263845058,Münchener Rückversicherung-Gesellschaft,"ERGO, Munich Re…",0.0,0.0,Insurance - Reinsurance,Financial Services,0.0
+MUV2.F,2020-04-01,194.27702984480908,Münchener Rückversicherung-Gesellschaft,"ERGO, Munich Re…",0.0,0.0,Insurance - Reinsurance,Financial Services,0.0
+MUV2.F,2020-05-01,194.04784469625403,Münchener Rückversicherung-Gesellschaft,"ERGO, Munich Re…",0.0,0.0,Insurance - Reinsurance,Financial Services,0.0
+MUV2.F,2020-06-01,230.1968610098003,Münchener Rückversicherung-Gesellschaft,"ERGO, Munich Re…",0.0,0.0,Insurance - Reinsurance,Financial Services,0.0
+MUV2.F,2020-07-01,233.47413385991973,Münchener Rückversicherung-Gesellschaft,"ERGO, Munich Re…",0.0,0.0,Insurance - Reinsurance,Financial Services,0.0
+MUV2.F,2020-08-01,236.08667352321376,Münchener Rückversicherung-Gesellschaft,"ERGO, Munich Re…",0.0,0.0,Insurance - Reinsurance,Financial Services,0.0
+MUV2.F,2020-09-01,232.31169891943694,Münchener Rückversicherung-Gesellschaft,"ERGO, Munich Re…",0.0,0.0,Insurance - Reinsurance,Financial Services,0.0
+MUV2.F,2020-10-01,208.99147983730418,Münchener Rückversicherung-Gesellschaft,"ERGO, Munich Re…",0.0,0.0,Insurance - Reinsurance,Financial Services,0.0
+MUV2.F,2020-11-01,225.0791744804505,Münchener Rückversicherung-Gesellschaft,"ERGO, Munich Re…",0.0,0.0,Insurance - Reinsurance,Financial Services,0.0
+MUV2.F,2020-12-01,241.48988008049588,Münchener Rückversicherung-Gesellschaft,"ERGO, Munich Re…",0.0,0.0,Insurance - Reinsurance,Financial Services,0.0
+RWE.F,2019-01-01,20.582323490572453,RWE AG St,RWE,37.0,1.0,"Energy, Utilities - Diversified",Utilities,0.0
+RWE.F,2019-02-01,21.963432213066696,RWE AG St,RWE,37.0,1.0,"Energy, Utilities - Diversified",Utilities,0.0
+RWE.F,2019-03-01,22.846386532337917,RWE AG St,RWE,37.0,1.0,"Energy, Utilities - Diversified",Utilities,0.0
+RWE.F,2019-04-01,23.381529407532177,RWE AG St,RWE,37.0,1.0,"Energy, Utilities - Diversified",Utilities,0.0
+RWE.F,2019-05-01,22.68290730466072,RWE AG St,RWE,37.0,1.0,"Energy, Utilities - Diversified",Utilities,0.0
+RWE.F,2019-06-01,22.793650676218363,RWE AG St,RWE,37.0,1.0,"Energy, Utilities - Diversified",Utilities,0.0
+RWE.F,2019-07-01,23.615985638416802,RWE AG St,RWE,37.0,1.0,"Energy, Utilities - Diversified",Utilities,0.0
+RWE.F,2019-08-01,25.440794076230286,RWE AG St,RWE,37.0,1.0,"Energy, Utilities - Diversified",Utilities,0.0
+RWE.F,2019-09-01,27.368603649592757,RWE AG St,RWE,37.0,1.0,"Energy, Utilities - Diversified",Utilities,0.0
+RWE.F,2019-10-01,27.4782618940905,RWE AG St,RWE,37.0,1.0,"Energy, Utilities - Diversified",Utilities,0.0
+RWE.F,2019-11-01,26.316572695116186,RWE AG St,RWE,37.0,1.0,"Energy, Utilities - Diversified",Utilities,0.0
+RWE.F,2019-12-01,26.28671439715034,RWE AG St,RWE,37.0,1.0,"Energy, Utilities - Diversified",Utilities,0.0
+RWE.F,2020-01-01,30.278579122401027,RWE AG St,RWE,37.0,1.0,"Energy, Utilities - Diversified",Utilities,0.0
+RWE.F,2020-02-01,32.70720843530361,RWE AG St,RWE,37.0,1.0,"Energy, Utilities - Diversified",Utilities,0.0
+RWE.F,2020-03-01,24.684681972144084,RWE AG St,RWE,37.0,1.0,"Energy, Utilities - Diversified",Utilities,0.0
+RWE.F,2020-04-01,24.985392990573256,RWE AG St,RWE,37.0,1.0,"Energy, Utilities - Diversified",Utilities,0.0
+RWE.F,2020-05-01,28.11603997682509,RWE AG St,RWE,37.0,1.0,"Energy, Utilities - Diversified",Utilities,0.0
+RWE.F,2020-06-01,30.824243127003687,RWE AG St,RWE,37.0,1.0,"Energy, Utilities - Diversified",Utilities,0.0
+RWE.F,2020-07-01,32.333943536469356,RWE AG St,RWE,37.0,1.0,"Energy, Utilities - Diversified",Utilities,0.0
+RWE.F,2020-08-01,33.30408503519641,RWE AG St,RWE,37.0,1.0,"Energy, Utilities - Diversified",Utilities,0.0
+RWE.F,2020-09-01,31.554339517320372,RWE AG St,RWE,37.0,1.0,"Energy, Utilities - Diversified",Utilities,0.0
+RWE.F,2020-10-01,33.00766957045609,RWE AG St,RWE,37.0,1.0,"Energy, Utilities - Diversified",Utilities,0.0
+RWE.F,2020-11-01,34.00863616597599,RWE AG St,RWE,37.0,1.0,"Energy, Utilities - Diversified",Utilities,0.0
+RWE.F,2020-12-01,33.952645667616906,RWE AG St,RWE,37.0,1.0,"Energy, Utilities - Diversified",Utilities,0.0
+SAP.F,2019-01-01,89.79545479144744,SAP SE,,1.0,1.0,"Technology, Software - Application",Technology,0.0
+SAP.F,2019-02-01,93.43557730333913,SAP SE,,1.0,1.0,"Technology, Software - Application",Technology,0.0
+SAP.F,2019-03-01,98.78635053928949,SAP SE,,1.0,1.0,"Technology, Software - Application",Technology,0.0
+SAP.F,2019-04-01,109.43463572587409,SAP SE,,1.0,1.0,"Technology, Software - Application",Technology,0.0
+SAP.F,2019-05-01,112.47922901423918,SAP SE,,1.0,1.0,"Technology, Software - Application",Technology,0.0
+SAP.F,2019-06-01,115.5935610641897,SAP SE,,1.0,1.0,"Technology, Software - Application",Technology,0.0
+SAP.F,2019-07-01,116.02339747533061,SAP SE,,1.0,1.0,"Technology, Software - Application",Technology,0.0
+SAP.F,2019-08-01,107.25324370245178,SAP SE,,1.0,1.0,"Technology, Software - Application",Technology,0.0
+SAP.F,2019-09-01,108.88333824815241,SAP SE,,1.0,1.0,"Technology, Software - Application",Technology,0.0
+SAP.F,2019-10-01,114.41024797907056,SAP SE,,1.0,1.0,"Technology, Software - Application",Technology,0.0
+SAP.F,2019-11-01,122.41813681427375,SAP SE,,1.0,1.0,"Technology, Software - Application",Technology,0.0
+SAP.F,2019-12-01,121.71739127672235,SAP SE,,1.0,1.0,"Technology, Software - Application",Technology,0.0
+SAP.F,2020-01-01,121.97319039682226,SAP SE,,1.0,1.0,"Technology, Software - Application",Technology,0.0
+SAP.F,2020-02-01,118.84913432229584,SAP SE,,1.0,1.0,"Technology, Software - Application",Technology,0.0
+SAP.F,2020-03-01,97.62194023202984,SAP SE,,1.0,1.0,"Technology, Software - Application",Technology,0.0
+SAP.F,2020-04-01,107.70216988204126,SAP SE,,1.0,1.0,"Technology, Software - Application",Technology,0.0
+SAP.F,2020-05-01,108.0662173060105,SAP SE,,1.0,1.0,"Technology, Software - Application",Technology,0.0
+SAP.F,2020-06-01,120.08676529567012,SAP SE,,1.0,1.0,"Technology, Software - Application",Technology,0.0
+SAP.F,2020-07-01,134.90099526793202,SAP SE,,1.0,1.0,"Technology, Software - Application",Technology,0.0
+SAP.F,2020-08-01,138.12663807028196,SAP SE,,1.0,1.0,"Technology, Software - Application",Technology,0.0
+SAP.F,2020-09-01,135.17552305188235,SAP SE,,1.0,1.0,"Technology, Software - Application",Technology,0.0
+SAP.F,2020-10-01,97.80560523817772,SAP SE,,1.0,1.0,"Technology, Software - Application",Technology,0.0
+SAP.F,2020-11-01,98.06846585289861,SAP SE,,1.0,1.0,"Technology, Software - Application",Technology,0.0
+SAP.F,2020-12-01,102.84797923370694,SAP SE,,1.0,1.0,"Technology, Software - Application",Technology,0.0
+SIE.F,2019-01-01,98.94472990277812,Siemens AG,Siemens,6.0,1.0,"Conglomerate, Special Industrial Machinery",Industrials,0.0
+SIE.F,2019-02-01,94.74004380050854,Siemens AG,Siemens,6.0,1.0,"Conglomerate, Special Industrial Machinery",Industrials,0.0
+SIE.F,2019-03-01,97.14184054389891,Siemens AG,Siemens,6.0,1.0,"Conglomerate, Special Industrial Machinery",Industrials,0.0
+SIE.F,2019-04-01,103.10284431284443,Siemens AG,Siemens,6.0,1.0,"Conglomerate, Special Industrial Machinery",Industrials,0.0
+SIE.F,2019-05-01,105.57947184527502,Siemens AG,Siemens,6.0,1.0,"Conglomerate, Special Industrial Machinery",Industrials,0.0
+SIE.F,2019-06-01,104.44346614406287,Siemens AG,Siemens,6.0,1.0,"Conglomerate, Special Industrial Machinery",Industrials,0.0
+SIE.F,2019-07-01,101.34313783587375,Siemens AG,Siemens,6.0,1.0,"Conglomerate, Special Industrial Machinery",Industrials,0.0
+SIE.F,2019-08-01,89.55330720646322,Siemens AG,Siemens,6.0,1.0,"Conglomerate, Special Industrial Machinery",Industrials,0.0
+SIE.F,2019-09-01,94.38797955348676,Siemens AG,Siemens,6.0,1.0,"Conglomerate, Special Industrial Machinery",Industrials,0.0
+SIE.F,2019-10-01,101.20487923946551,Siemens AG,Siemens,6.0,1.0,"Conglomerate, Special Industrial Machinery",Industrials,0.0
+SIE.F,2019-11-01,113.717766948531,Siemens AG,Siemens,6.0,1.0,"Conglomerate, Special Industrial Machinery",Industrials,0.0
+SIE.F,2019-12-01,117.32613118431978,Siemens AG,Siemens,6.0,1.0,"Conglomerate, Special Industrial Machinery",Industrials,0.0
+SIE.F,2020-01-01,115.90147735726453,Siemens AG,Siemens,6.0,1.0,"Conglomerate, Special Industrial Machinery",Industrials,0.0
+SIE.F,2020-02-01,103.88971994626665,Siemens AG,Siemens,6.0,1.0,"Conglomerate, Special Industrial Machinery",Industrials,0.0
+SIE.F,2020-03-01,74.66607396139128,Siemens AG,Siemens,6.0,1.0,"Conglomerate, Special Industrial Machinery",Industrials,0.0
+SIE.F,2020-04-01,81.46849113095453,Siemens AG,Siemens,6.0,1.0,"Conglomerate, Special Industrial Machinery",Industrials,0.0
+SIE.F,2020-05-01,90.64762056487942,Siemens AG,Siemens,6.0,1.0,"Conglomerate, Special Industrial Machinery",Industrials,0.0
+SIE.F,2020-06-01,103.00095636727502,Siemens AG,Siemens,6.0,1.0,"Conglomerate, Special Industrial Machinery",Industrials,0.0
+SIE.F,2020-07-01,110.78660741205306,Siemens AG,Siemens,6.0,1.0,"Conglomerate, Special Industrial Machinery",Industrials,0.0
+SIE.F,2020-08-01,116.35903369663214,Siemens AG,Siemens,6.0,1.0,"Conglomerate, Special Industrial Machinery",Industrials,0.0
+SIE.F,2020-09-01,113.81775420379242,Siemens AG,Siemens,6.0,1.0,"Conglomerate, Special Industrial Machinery",Industrials,0.0
+SIE.F,2020-10-01,106.27135250899275,Siemens AG,Siemens,6.0,1.0,"Conglomerate, Special Industrial Machinery",Industrials,0.0
+SIE.F,2020-11-01,113.09642485333173,Siemens AG,Siemens,6.0,1.0,"Conglomerate, Special Industrial Machinery",Industrials,0.0
+SIE.F,2020-12-01,115.22892139595582,Siemens AG,Siemens,6.0,1.0,"Conglomerate, Special Industrial Machinery",Industrials,0.0
+VNA.F,2019-01-01,42.18217938327041,Vonovia SE,,0.0,0.0,Real Estate Services,Real Estate,0.0
+VNA.F,2019-02-01,43.875972436346906,Vonovia SE,,0.0,0.0,Real Estate Services,Real Estate,0.0
+VNA.F,2019-03-01,45.535548575452054,Vonovia SE,,0.0,0.0,Real Estate Services,Real Estate,0.0
+VNA.F,2019-04-01,44.89771265702525,Vonovia SE,,0.0,0.0,Real Estate Services,Real Estate,0.0
+VNA.F,2019-05-01,47.091365119903884,Vonovia SE,,0.0,0.0,Real Estate Services,Real Estate,0.0
+VNA.F,2019-06-01,44.458913050600586,Vonovia SE,,0.0,0.0,Real Estate Services,Real Estate,0.0
+VNA.F,2019-07-01,44.09405488325215,Vonovia SE,,0.0,0.0,Real Estate Services,Real Estate,0.0
+VNA.F,2019-08-01,44.225131632534044,Vonovia SE,,0.0,0.0,Real Estate Services,Real Estate,0.0
+VNA.F,2019-09-01,43.41876110527888,Vonovia SE,,0.0,0.0,Real Estate Services,Real Estate,0.0
+VNA.F,2019-10-01,47.16570098814589,Vonovia SE,,0.0,0.0,Real Estate Services,Real Estate,0.0
+VNA.F,2019-11-01,47.12087889288724,Vonovia SE,,0.0,0.0,Real Estate Services,Real Estate,0.0
+VNA.F,2019-12-01,46.79893935630117,Vonovia SE,,0.0,0.0,Real Estate Services,Real Estate,0.0
+VNA.F,2020-01-01,49.8561382055207,Vonovia SE,,0.0,0.0,Real Estate Services,Real Estate,0.0
+VNA.F,2020-02-01,51.31516485064054,Vonovia SE,,0.0,0.0,Real Estate Services,Real Estate,0.0
+VNA.F,2020-03-01,44.44491961920215,Vonovia SE,,0.0,0.0,Real Estate Services,Real Estate,0.0
+VNA.F,2020-04-01,44.85719417757045,Vonovia SE,,0.0,0.0,Real Estate Services,Real Estate,0.0
+VNA.F,2020-05-01,48.53922717712848,Vonovia SE,,0.0,0.0,Real Estate Services,Real Estate,0.0
+VNA.F,2020-06-01,53.78873957731995,Vonovia SE,,0.0,0.0,Real Estate Services,Real Estate,0.0
+VNA.F,2020-07-01,54.41104393642317,Vonovia SE,,0.0,0.0,Real Estate Services,Real Estate,0.0
+VNA.F,2020-08-01,58.751446877520685,Vonovia SE,,0.0,0.0,Real Estate Services,Real Estate,0.0
+VNA.F,2020-09-01,59.34351807348269,Vonovia SE,,0.0,0.0,Real Estate Services,Real Estate,0.0
+VNA.F,2020-10-01,56.480375044579354,Vonovia SE,,0.0,0.0,Real Estate Services,Real Estate,0.0
+VNA.F,2020-11-01,56.75794758565711,Vonovia SE,,0.0,0.0,Real Estate Services,Real Estate,0.0
+VNA.F,2020-12-01,57.465932832761425,Vonovia SE,,0.0,0.0,Real Estate Services,Real Estate,0.0
+VOW3.F,2019-01-01,144.87413853058547,Volkswagen AG Vz,Audi,7.0,1.0,"Cars, Auto Manufacturers",Consumer Cyclical,1.0
+VOW3.F,2019-02-01,146.69299002872856,Volkswagen AG Vz,Audi,7.0,1.0,"Cars, Auto Manufacturers",Consumer Cyclical,1.0
+VOW3.F,2019-03-01,146.47385685423185,Volkswagen AG Vz,Audi,7.0,1.0,"Cars, Auto Manufacturers",Consumer Cyclical,1.0
+VOW3.F,2019-04-01,153.75510605081462,Volkswagen AG Vz,Audi,7.0,1.0,"Cars, Auto Manufacturers",Consumer Cyclical,1.0
+VOW3.F,2019-05-01,150.09716964741307,Volkswagen AG Vz,Audi,7.0,1.0,"Cars, Auto Manufacturers",Consumer Cyclical,1.0
+VOW3.F,2019-06-01,144.74763697232356,Volkswagen AG Vz,Audi,7.0,1.0,"Cars, Auto Manufacturers",Consumer Cyclical,1.0
+VOW3.F,2019-07-01,154.10920510653503,Volkswagen AG Vz,Audi,7.0,1.0,"Cars, Auto Manufacturers",Consumer Cyclical,1.0
+VOW3.F,2019-08-01,142.76918189561928,Volkswagen AG Vz,Audi,7.0,1.0,"Cars, Auto Manufacturers",Consumer Cyclical,1.0
+VOW3.F,2019-09-01,154.99743012435349,Volkswagen AG Vz,Audi,7.0,1.0,"Cars, Auto Manufacturers",Consumer Cyclical,1.0
+VOW3.F,2019-10-01,165.99323619325574,Volkswagen AG Vz,Audi,7.0,1.0,"Cars, Auto Manufacturers",Consumer Cyclical,1.0
+VOW3.F,2019-11-01,179.401954096851,Volkswagen AG Vz,Audi,7.0,1.0,"Cars, Auto Manufacturers",Consumer Cyclical,1.0
+VOW3.F,2019-12-01,181.14506966484535,Volkswagen AG Vz,Audi,7.0,1.0,"Cars, Auto Manufacturers",Consumer Cyclical,1.0
+VOW3.F,2020-01-01,176.59456294117055,Volkswagen AG Vz,Audi,7.0,1.0,"Cars, Auto Manufacturers",Consumer Cyclical,1.0
+VOW3.F,2020-02-01,160.78938184537293,Volkswagen AG Vz,Audi,7.0,1.0,"Cars, Auto Manufacturers",Consumer Cyclical,1.0
+VOW3.F,2020-03-01,109.98688167639969,Volkswagen AG Vz,Audi,7.0,1.0,"Cars, Auto Manufacturers",Consumer Cyclical,1.0
+VOW3.F,2020-04-01,117.91941424525773,Volkswagen AG Vz,Audi,7.0,1.0,"Cars, Auto Manufacturers",Consumer Cyclical,1.0
+VOW3.F,2020-05-01,129.50070386921996,Volkswagen AG Vz,Audi,7.0,1.0,"Cars, Auto Manufacturers",Consumer Cyclical,1.0
+VOW3.F,2020-06-01,139.8528171755353,Volkswagen AG Vz,Audi,7.0,1.0,"Cars, Auto Manufacturers",Consumer Cyclical,1.0
+VOW3.F,2020-07-01,137.92768885093787,Volkswagen AG Vz,Audi,7.0,1.0,"Cars, Auto Manufacturers",Consumer Cyclical,1.0
+VOW3.F,2020-08-01,136.84222565379628,Volkswagen AG Vz,Audi,7.0,1.0,"Cars, Auto Manufacturers",Consumer Cyclical,1.0
+VOW3.F,2020-09-01,142.23382046871515,Volkswagen AG Vz,Audi,7.0,1.0,"Cars, Auto Manufacturers",Consumer Cyclical,1.0
+VOW3.F,2020-10-01,133.99485565418655,Volkswagen AG Vz,Audi,7.0,1.0,"Cars, Auto Manufacturers",Consumer Cyclical,1.0
+VOW3.F,2020-11-01,143.38393874767033,Volkswagen AG Vz,Audi,7.0,1.0,"Cars, Auto Manufacturers",Consumer Cyclical,1.0
+VOW3.F,2020-12-01,147.73482748161575,Volkswagen AG Vz,Audi,7.0,1.0,"Cars, Auto Manufacturers",Consumer Cyclical,1.0
