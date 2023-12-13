@@ -1,0 +1,195 @@
+# Master Thesis Johanna Schulz
+
+This .Rmd file includes the code for the econometric analysis for the master thesis.
+Specifically, this file include the analaysis for the main analysis. Another notebook will be created to perform the additional Twitter Post data analysis.
+
+## Load libraries
+```{r}
+install.packages(readxl)
+library(readxl)
+
+install.packages(ggplot2)
+library(ggplot2)
+
+install.packages(ggcorrplot)
+library(ggcorrplot)
+
+install.packages(dplyr)
+library(dplyr)
+
+install.packages(lmtest)
+library(lmtest)
+
+install.packages(tidyverse)
+library(tidyverse)
+
+install.packages(tseries)
+library(tseries)
+
+install.packages(car)
+library(car)
+
+install.packages("plm")
+library(plm)
+
+```
+
+
+## Import the data set
+```{r}
+file_path <- "../outputs/monthly_vwap_brand_data.xlsx"
+
+data <- read_excel(file_path)
+```
+
+
+```{r}
+head(data)
+str(data) # I inspect the data types of the variables and will make some changes now#
+```
+The data types of some of the columns is not perfectly assigned for the following analysis in R. Therefore, some are converted:
+```{r}
+data$Industry <- as.factor(data$Industry) # because it is a categorical variable
+data$Sector <- as.factor(data$Sector) # same applies as above
+data$StrongBrand <- as.factor(data$StrongBrand) # dummy variable, therefore factor type is better than numerical
+data$MultipleStrongBrands <- as.factor(data$MultipleStrongBrands) # same applies as above
+data$Crisis <- as.factor(data$Crisis) # same applies as above
+
+```
+
+
+## Econometric Analysis
+
+### Correlation Analysis of the (Continuous) Variables
+```{r}
+# Correlation between VWAP and BrandRanking
+corr_matrix <- cor(data$VWAP, data$BrandRanking, use = "complete.obs")
+
+print(corr_matrix)
+
+```
+
+```{r}
+# Summary of VWAP by StrongBrand
+data %>%
+  group_by(StrongBrand) %>%
+  summarise(Mean_VWAP = mean(VWAP, na.rm = TRUE),
+            Median_VWAP = median(VWAP, na.rm = TRUE),
+            SD_VWAP = sd(VWAP, na.rm = TRUE))
+
+```
+
+```{r}
+data %>%
+  group_by(MultipleStrongBrands) %>%
+  summarise(Mean_VWAP = mean(VWAP, na.rm = TRUE),
+            Median_VWAP = median(VWAP, na.rm = TRUE),
+            SD_VWAP = sd(VWAP, na.rm = TRUE))
+
+```
+
+
+```{r}
+data %>%
+  group_by(Crisis) %>%
+  summarise(Mean_VWAP = mean(VWAP, na.rm = TRUE),
+            Median_VWAP = median(VWAP, na.rm = TRUE),
+            SD_VWAP = sd(VWAP, na.rm = TRUE))
+```
+
+### Basic Linear Regression
+
+```{r}
+# Simple linear regression
+linreg1 <- lm(VWAP ~ Crisis, data = data)
+summary(linreg1)
+```
+#### OLS Assumptions | Model 1 "linreg1"
+Random sample: observations are iid
+
+1. Nonzero expectation: Zero mean for errors
+2. Homoscedasticity: Constant variance for errors
+3. Pairwise uncorrelated errors
+4. Errors distributed multivariate normal
+5. Nonstochastic regressors
+6. No multicollinearity
+
+--> All tests need to be NOT significant to meet assumptions
+
+```{r}
+# 1. Nonzero expectation: Zero mean for errors -> Resest test
+resettest(linreg1) #not significant, assumption holds
+```
+
+```{r}
+# 2. Homoscedasticity: Constant variance for errors -> Breusch Pagan Test & Goldfeld-Quandt Test
+gqtest(linreg1) #not significant, assumption holds
+```
+
+```{r}
+# 3. Pairwise uncorrelated errors -> Plotting residuals against time
+plot(residuals(linreg1) ~ data$MonthYear) #random -> assumption holds
+```
+
+```{r}
+# 4. Errors distributed multivariate normal -> Jarque and Bera (1980)
+jarque.bera.test(residuals(linreg1)) #significant -> VIOLATED
+```
+
+```{r}
+# 5. Nonstochastic regressors, no correlation of predictor and residuals -> results should show no correlation 
+residuals <- residuals(linreg1)
+
+#results should show no correlation --> VIOLATED
+cor.test(residuals,data$VWAP) #correlation = 0.99
+cor.test(residuals,data$Crisis) # correlation = 1.803057e-16 
+```
+
+```{r}
+# 6. No multicollinearity -> VIF values should be smaller than 4
+## does not apply because only one predictor yet
+```
+
+#### Simple Linear Regression | StrongBrand as Predictor
+```{r}
+# with all observations
+linreg2 <- lm(VWAP ~ StrongBrand, data = data)
+summary(linreg2)
+```
+
+```{r}
+# with subset for crisis = 0
+data_no_crisis <- subset(data, Crisis == 0)
+
+linreg2_no_crisis <- lm(VWAP ~ StrongBrand, data = data_no_crisis)
+summary(linreg2_no_crisis)
+
+```
+
+### Multiple Linear Regression | Baseline Model
+
+```{r}
+linreg_base <- lm(VWAP ~ Crisis + StrongBrand + (Crisis*StrongBrand), data = data)
+summary(linreg_base)
+```
+
+### Fixed Effects Regression | Baseline
+
+```{r}
+# Convert your data to a pdata.frame
+# Assuming 'CompanyName' and 'MonthYear' are your cross-sectional and time identifiers
+pdata <- pdata.frame(data, index = c("CompanyName", "MonthYear"))
+
+```
+
+
+```{r}
+# Fixed effects model
+fe_model <- plm(VWAP ~ Crisis + StrongBrand + (Crisis * StrongBrand) + Industry, 
+                data = pdata, model = "within")
+
+# Summary of the fixed effects model
+summary(fe_model)
+
+```
+
