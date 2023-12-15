@@ -1,23 +1,107 @@
-<mxfile host="app.diagrams.net" modified="2023-12-02T13:20:28.453Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15" etag="7Yby1rXZuzn9dVS8A2yH" version="22.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-15T19:30:32.699Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15" etag="qIlh9HNkuNlMqstRJxjM" version="22.1.8" type="github">
   <diagram name="Page-1" id="7igvs6gEivPfTOj5GeFv">
-    <mxGraphModel dx="984" dy="667" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1144" dy="712" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Orsz5sGhs1cldK6UFUGG-1" value="Horizontal Container" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Orsz5sGhs1cldK6UFUGG-1" value="Databases" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="60" y="220" width="200" height="420" as="geometry" />
         </mxCell>
-        <mxCell id="Orsz5sGhs1cldK6UFUGG-3" value="Yahoo Finance" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="Orsz5sGhs1cldK6UFUGG-1">
-          <mxGeometry x="44" y="30" width="60" height="80" as="geometry" />
+        <mxCell id="Orsz5sGhs1cldK6UFUGG-3" value="Yahoo Finance" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="Orsz5sGhs1cldK6UFUGG-1" vertex="1">
+          <mxGeometry x="70" y="40" width="60" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Orsz5sGhs1cldK6UFUGG-5" value="Kantar BrandZ" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="Orsz5sGhs1cldK6UFUGG-1">
-          <mxGeometry x="44" y="150" width="60" height="80" as="geometry" />
+        <mxCell id="Orsz5sGhs1cldK6UFUGG-5" value="Kantar BrandZ" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="Orsz5sGhs1cldK6UFUGG-1" vertex="1">
+          <mxGeometry x="70" y="170" width="60" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Orsz5sGhs1cldK6UFUGG-6" value="Twitter" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="Orsz5sGhs1cldK6UFUGG-1">
-          <mxGeometry x="44" y="270" width="60" height="80" as="geometry" />
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-1" value="Federal Statistical Office" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="Orsz5sGhs1cldK6UFUGG-1">
+          <mxGeometry x="70" y="300" width="60" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Orsz5sGhs1cldK6UFUGG-7" value="wie" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="290" y="220" width="200" height="420" as="geometry" />
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-42" value="Report" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Orsz5sGhs1cldK6UFUGG-1">
+          <mxGeometry x="52.5" y="250" width="95" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-43" value="Yahoo DB" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Orsz5sGhs1cldK6UFUGG-1">
+          <mxGeometry x="52.5" y="120" width="95" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-44" value="DB" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Orsz5sGhs1cldK6UFUGG-1">
+          <mxGeometry x="52.5" y="380" width="95" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Orsz5sGhs1cldK6UFUGG-7" value="Extraction" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="270" y="220" width="200" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-23" value="Stock Information" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Orsz5sGhs1cldK6UFUGG-7">
+          <mxGeometry x="50" y="20" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-24" value="Sector &amp;amp; Industry" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Orsz5sGhs1cldK6UFUGG-7">
+          <mxGeometry x="50" y="120" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-27" value="Top Brands 2019" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Orsz5sGhs1cldK6UFUGG-7">
+          <mxGeometry x="50" y="220" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-28" value="Consumer Price Index" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Orsz5sGhs1cldK6UFUGG-7">
+          <mxGeometry x="50" y="326" width="130" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-34" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-3/256/microsoft-excel-logo-thin-128.png" vertex="1" parent="Orsz5sGhs1cldK6UFUGG-7">
+          <mxGeometry x="50" y="260" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-35" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-3/256/microsoft-excel-logo-thin-128.png" vertex="1" parent="Orsz5sGhs1cldK6UFUGG-7">
+          <mxGeometry x="50" y="362" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-36" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-3/256/microsoft-excel-logo-thin-128.png" vertex="1" parent="Orsz5sGhs1cldK6UFUGG-7">
+          <mxGeometry x="50" y="160" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-37" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-3/256/microsoft-excel-logo-thin-128.png" vertex="1" parent="Orsz5sGhs1cldK6UFUGG-7">
+          <mxGeometry x="50" y="60" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-38" value="Direct filtered extraction" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Orsz5sGhs1cldK6UFUGG-7">
+          <mxGeometry x="85" y="60" width="95" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-39" value="&amp;nbsp;Manual data entry" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Orsz5sGhs1cldK6UFUGG-7">
+          <mxGeometry x="85" y="160" width="95" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-40" value="&amp;nbsp;Manual data entry" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Orsz5sGhs1cldK6UFUGG-7">
+          <mxGeometry x="85" y="260" width="95" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-41" value="Direct filtered extraction" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Orsz5sGhs1cldK6UFUGG-7">
+          <mxGeometry x="85" y="360" width="95" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-3" value="Transform" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="220" width="350" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-16" value="time aggregation (daily to monthly)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ZQCkKx4SF7BVx3PdPr3Z-3">
+          <mxGeometry x="50" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-17" value="sectors aggregated" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ZQCkKx4SF7BVx3PdPr3Z-3">
+          <mxGeometry x="50" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-45" value="Merged Data" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ZQCkKx4SF7BVx3PdPr3Z-3">
+          <mxGeometry x="210" y="150" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-46" value="Python" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ZQCkKx4SF7BVx3PdPr3Z-3">
+          <mxGeometry x="30" y="400" width="320" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-10" value="Loading" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="220" width="200" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-47" value="R" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ZQCkKx4SF7BVx3PdPr3Z-10">
+          <mxGeometry x="30" y="400" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-49" value="Linear Regression 1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="ZQCkKx4SF7BVx3PdPr3Z-10">
+          <mxGeometry x="40" y="20" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-50" value="Linear Regression 2" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="ZQCkKx4SF7BVx3PdPr3Z-10">
+          <mxGeometry x="40" y="180" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-51" value="Linear Regression 3" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="ZQCkKx4SF7BVx3PdPr3Z-10">
+          <mxGeometry x="40" y="305" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-20" value="ETL Pipeline" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" vertex="1" parent="1">
+          <mxGeometry x="270" y="650" width="790" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-21" value="Sources" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=10;notch=10;" vertex="1" parent="1">
+          <mxGeometry x="60" y="660" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZQCkKx4SF7BVx3PdPr3Z-57" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="220" width="20" height="480" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
