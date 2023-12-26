@@ -104,8 +104,6 @@ ggplot(data, aes(x = MonthYear, y = CPI)) +
 
 ```
 
-
-
 #### Grouped Summary Statistics for Dummy Variables
 ```{r}
 # Summary of VWAP by StrongBrand
@@ -134,6 +132,52 @@ data %>%
   summarise(Mean_VWAP = mean(VWAP, na.rm = TRUE),
             Median_VWAP = median(VWAP, na.rm = TRUE),
             SD_VWAP = sd(VWAP, na.rm = TRUE))
+```
+```{r}
+library(dplyr)
+
+# mean of VWAP for each level of Crisis
+mean_vwap_by_crisis <- data %>%
+  group_by(Crisis) %>%
+  summarise(Mean_VWAP = mean(VWAP, na.rm = TRUE))
+
+print(mean_vwap_by_crisis)
+```
+```{r}
+# mean of VWAP for each combination of Crisis and StrongBrand
+mean_vwap_by_crisis_strongbrand <- data %>%
+  group_by(Crisis, StrongBrand) %>%
+  summarise(Mean_VWAP = mean(VWAP, na.rm = TRUE))
+
+print(mean_vwap_by_crisis_strongbrand)
+```
+```{r}
+library(dplyr)
+library(ggplot2)
+
+mean_vwap_data <- data %>%
+  group_by(StrongBrand, Crisis) %>%
+  summarise(Mean_VWAP = mean(VWAP, na.rm = TRUE)) %>%
+  mutate(Category = factor(paste("StrongBrand =", StrongBrand, "- Crisis =", Crisis),
+                           levels = c("StrongBrand = 1 - Crisis = 0", 
+                                      "StrongBrand = 1 - Crisis = 1",
+                                      "StrongBrand = 0 - Crisis = 0",
+                                      "StrongBrand = 0 - Crisis = 1")))
+
+custom_labels <- c("Crisis = 0\n    ", "Crisis = 1\nStrong Brand = 1", 
+                   "Crisis = 0\n    ", "Crisis = 1\nStrong Brand = 0")
+
+ggplot(mean_vwap_data, aes(x = Category, y = Mean_VWAP, fill = Category)) +
+  geom_bar(stat = "identity", position = position_dodge(), width = 0.6) +
+  scale_fill_grey(start = 0.8, end = 0.5) +
+  geom_text(aes(label = round(Mean_VWAP, 2)), vjust = -0.5, position = position_dodge(width = 0.6)) +
+  labs(title = "Mean VWAP Values by StrongBrand and Crisis Status",
+       x = "",  
+       y = "Mean VWAP") +
+  scale_x_discrete(labels = custom_labels) +  
+  theme_minimal() +
+  theme(legend.position = "none",
+        axis.text.x = element_text(angle = 0, hjust = 0.5))  
 ```
 
 ### Models
