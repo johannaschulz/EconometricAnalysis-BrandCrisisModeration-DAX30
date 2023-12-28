@@ -276,6 +276,29 @@ print(coeftest_results)
 ```
 #### Model 1.2 | Hypothesis H1b, CPI as predictor
 ```{r}
+# Model 1.2 without controls, CPI as IV
+linreg1_2 <- lm(VWAP ~ CPI, data = data)
+summary(linreg1_2)
+```
+```{r}
+# stepwise control adding
+linreg1_2 <- lm(VWAP ~ CPI + Sector, data = data)
+summary(linreg1_2)
+```
+
+```{r}
+# stepwise control adding
+linreg1_2 <- lm(VWAP ~ CPI + Sector + TR, data = data)
+summary(linreg1_2)
+```
+```{r}
+# stepwise control adding
+linreg1_2 <- lm(VWAP ~ CPI + Sector + TR + EBIT, data = data)
+summary(linreg1_2)
+```
+
+
+```{r}
 # Model 1.2 with controls, CPI as IV
 linreg1_2 <- lm(VWAP ~ CPI + Sector + TR + EBIT + VWAP_lagged, data = data)
 summary(linreg1_2)
@@ -326,6 +349,24 @@ print(coeftest_results)
 linreg_2_0 <- lm(VWAP ~ Crisis + StrongBrand + (Crisis*StrongBrand), data = data)
 summary(linreg_2_0)
 ```
+```{r}
+# without controls
+linreg_2_0 <- lm(VWAP ~ Crisis + StrongBrand + (Crisis*StrongBrand) + Sector, data = data)
+summary(linreg_2_0)
+```
+
+```{r}
+# without controls
+linreg_2_0 <- lm(VWAP ~ Crisis + StrongBrand + (Crisis*StrongBrand) + Sector + TR, data = data)
+summary(linreg_2_0)
+```
+
+```{r}
+# without controls
+linreg_2_0 <- lm(VWAP ~ Crisis + StrongBrand + (Crisis*StrongBrand) + Sector + TR + EBIT, data = data)
+summary(linreg_2_0)
+```
+
 
 ```{r}
 # with controls
@@ -383,14 +424,29 @@ print(coeftest_results)
 
 ##### Model 2.1 - CPI and StrongBrand as IV 
 ```{r}
-# without controls first 
+# without controls (see Table x in Appendix)
 linreg_2_1 <- lm(VWAP ~ CPI + StrongBrand + (CPI*StrongBrand), data = data)
+summary(linreg_2_1)
+```
+```{r}
+# stepwise control adding 
+linreg_2_1 <- lm(VWAP ~ CPI + StrongBrand + (CPI*StrongBrand) + Sector, data = data)
+summary(linreg_2_1)
+```
+```{r}
+# stepwise control adding 
+linreg_2_1 <- lm(VWAP ~ CPI + StrongBrand + (CPI*StrongBrand) + Sector + TR , data = data)
+summary(linreg_2_1)
+```
+```{r}
+# stepwise control adding 
+linreg_2_1 <- lm(VWAP ~ CPI + StrongBrand + (CPI*StrongBrand) + Sector + TR + EBIT, data = data)
 summary(linreg_2_1)
 ```
 
 ```{r}
 # with controls  
-linreg_2_1 <- lm(VWAP ~ CPI + StrongBrand + (CPI*StrongBrand) + Sector + EBIT + TR + VWAP_lagged, data = data)
+linreg_2_1 <- lm(VWAP ~ CPI + StrongBrand + (CPI*StrongBrand) + Sector + TR + EBIT + VWAP_lagged, data = data)
 summary(linreg_2_1)
 ```
 
@@ -450,13 +506,22 @@ head(subset_strongbrand)
 linreg_3_0 <- lm(VWAP ~ Crisis + BrandRanking + (Crisis*BrandRanking), data = subset_strongbrand)
 summary(linreg_3_0)
 ```
-
 ```{r}
-# without controls (no subset)
-linreg_3_0 <- lm(VWAP ~ Crisis + BrandRanking + (Crisis*BrandRanking), data = data)
+# stepwise control adding
+linreg_3_0 <- lm(VWAP ~ Crisis + BrandRanking + (Crisis*BrandRanking) + Sector, data = subset_strongbrand)
 summary(linreg_3_0)
 ```
 
+```{r}
+# stepwise control adding
+linreg_3_0 <- lm(VWAP ~ Crisis + BrandRanking + (Crisis*BrandRanking) + Sector + TR, data = subset_strongbrand)
+summary(linreg_3_0)
+```
+```{r}
+# stepwise control adding
+linreg_3_0 <- lm(VWAP ~ Crisis + BrandRanking + (Crisis*BrandRanking) + Sector + TR + EBIT, data = subset_strongbrand)
+summary(linreg_3_0)
+```
 
 ```{r}
 # with controls
@@ -513,6 +578,11 @@ linreg_3_1 <- lm(VWAP ~ CPI + BrandRanking + (CPI*BrandRanking), data = subset_s
 summary(linreg_3_1)
 ```
 
+```{r}
+# stepwise control adding
+linreg_3_1 <- lm(VWAP ~ CPI + BrandRanking + (CPI*BrandRanking), data = subset_strongbrand)
+summary(linreg_3_1)
+```
 
 ```{r}
 # with controls
