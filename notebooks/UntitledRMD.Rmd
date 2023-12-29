@@ -580,7 +580,18 @@ summary(linreg_3_1)
 
 ```{r}
 # stepwise control adding
-linreg_3_1 <- lm(VWAP ~ CPI + BrandRanking + (CPI*BrandRanking), data = subset_strongbrand)
+linreg_3_1 <- lm(VWAP ~ CPI + BrandRanking + (CPI*BrandRanking) + Sector, data = subset_strongbrand)
+summary(linreg_3_1)
+```
+```{r}
+# stepwise control adding
+linreg_3_1 <- lm(VWAP ~ CPI + BrandRanking + (CPI*BrandRanking) + Sector + TR, data = subset_strongbrand)
+summary(linreg_3_1)
+```
+
+```{r}
+# stepwise control adding
+linreg_3_1 <- lm(VWAP ~ CPI + BrandRanking + (CPI*BrandRanking) + Sector + TR + EBIT, data = subset_strongbrand)
 summary(linreg_3_1)
 ```
 
