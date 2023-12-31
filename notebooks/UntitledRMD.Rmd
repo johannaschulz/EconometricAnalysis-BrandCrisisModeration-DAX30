@@ -34,6 +34,10 @@ library(plm)
 
 install.packages("ggtext")
 library(ggtext)
+
+install.packages("ggplot2")
+install.packages("reshape2")
+install.packages("ggcorrplot")
 ```
 
 
@@ -56,14 +60,13 @@ data$Sector <- as.factor(data$Sector) # same applies as above
 data$StrongBrand <- as.factor(data$StrongBrand) # dummy variable, therefore factor type is better than numerical
 data$MultipleStrongBrands <- as.factor(data$MultipleStrongBrands) # same applies as above
 data$Crisis <- as.factor(data$Crisis) # same applies as above
-
 ```
 
 
 ## Econometric Analysis
 
 ```{r}
-# Convert data to a pdata.frame, 'CompanyName' and 'MonthYear' are your cross-sectional and time identifiers
+# Convert data to a pdata.frame, 'CompanyName' and 'MonthYear' are cross-sectional and time identifiers
 pdata <- pdata.frame(data, index = c("CompanyName", "MonthYear"))
 ```
 
@@ -72,15 +75,48 @@ pdata <- pdata.frame(data, index = c("CompanyName", "MonthYear"))
 #### Correlation Analysis of the (Continuous) Variables
 ```{r}
 # Correlation between VWAP and other numerical variables
-data_corr <- data[, c("VWAP", "BrandRanking", "CPI", "CPI_Change_MoM", "CPI_Change_YoY", "TR", "EBIT", "EBITDA")]
+data_corr <- data[, c("VWAP", "BrandRanking", "CPI", "TR", "EBIT", "EBITDA", "VWAP_lagged")]
 
 corr_matrix <- cor(data_corr, use = "complete.obs")
 
 corr_matrix
 ```
+
+
+```{r}
+library(ggplot2)
+library(reshape2)
+library(ggcorrplot)
+# Compute the correlation matrix
+data_corr <- data[, c("VWAP", "BrandRanking", "CPI", "TR", "EBIT", "EBITDA", "VWAP_lagged")]
+corr_matrix <- cor(data_corr, use = "complete.obs")
+
+# Transform the correlation matrix into a long format
+corr_long <- melt(corr_matrix)
+
+# Create a heatmap with correlation values, Times New Roman font, a descriptive title, and no axis titles
+ggplot(corr_long, aes(Var1, Var2, fill = value)) +
+  geom_tile(color = "white") +
+  geom_text(aes(label = round(value, 3)), color = "black", size = 3, family = "Times New Roman") +
+  scale_fill_gradient2(low = "blue", high = "red", mid = "white", 
+                       midpoint = 0, limit = c(-1, 1), space = "Lab", 
+                       name="Correlation") +
+  labs(title = "Correlation Heatmap",
+       x = "",  
+       y = "") +  
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1, family = "Times New Roman"),
+        axis.text.y = element_text(family = "Times New Roman"),
+        plot.title = element_text(family = "Times New Roman", hjust = 0.5, size = 12),
+        plot.subtitle = element_text(family = "Times New Roman"),
+        plot.caption = element_text(family = "Times New Roman"),
+        legend.title = element_text(family = "Times New Roman"),
+        legend.text = element_text(family = "Times New Roman")) + 
+  coord_fixed()
+```
+
 #### Scatter Plot VWAP - CPI
 ```{r}
-# Create a scatter plot of VWAP vs CPI
 ggplot(data, aes(x = CPI, y = VWAP)) +
   geom_point() +
   labs(title = "Scatter Plot of VWAP vs CPI", x = "CPI", y = "VWAP") +
@@ -88,7 +124,7 @@ ggplot(data, aes(x = CPI, y = VWAP)) +
 
 ```
 ```{r}
-# Create a scatter plot of VWAP vs CPI, colored by TickerCode
+# colored by TickerCode
 ggplot(data, aes(x = CPI, y = VWAP, color = TickerCode)) +
   geom_point() +
   labs(title = "Scatter Plot of VWAP vs CPI by Company", x = "CPI", y = "VWAP") +
@@ -97,13 +133,31 @@ ggplot(data, aes(x = CPI, y = VWAP, color = TickerCode)) +
 
 ```
 ```{r}
-# Create a time series plot for CPI
-ggplot(data, aes(x = MonthYear, y = CPI)) +
-  geom_line() +  # Use geom_line for time series
-  labs(title = "Time Series of CPI per Month", x = "Month-Year", y = "CPI") +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotate x-axis labels for clarity
+# Load the ggplot2 package
+library(ggplot2)
 
+# Convert MonthYear to Date if it's not already
+data$MonthYear <- as.Date(data$MonthYear)
+
+# Create the time series plot with the specified lines
+cpi_plot <- ggplot(data, aes(x = MonthYear, y = CPI)) +
+  geom_line() +
+  geom_vline(xintercept = as.Date("2019-12-01"), linetype = "dotted", color = "grey") +
+  geom_hline(yintercept = 100, color = "grey") +
+  labs(title = "Time Series of CPI per Month", 
+       x = "Month-Year", 
+       y = "CPI (Base: December 2019 = 100)") +
+  theme_minimal() +
+  theme(text = element_text(family = "Times New Roman"),
+        axis.text.x = element_text(angle = 45, hjust = 1, family = "Times New Roman"),
+        axis.text.y = element_text(family = "Times New Roman"),
+        plot.title = element_text(family = "Times New Roman", hjust = 0.5))
+
+cpi_plot
+```
+
+```{r}
+ggsave("CPI_Time_Series.png", plot = cpi_plot, width = 10, height = 6, dpi = 300)
 ```
 
 #### Grouped Summary Statistics for Dummy Variables
@@ -146,13 +200,25 @@ mean_vwap_by_crisis <- data %>%
 print(mean_vwap_by_crisis)
 ```
 ```{r}
-# mean of VWAP for each combination of Crisis and StrongBrand
+# mean of VWAP for each combination of Crisis and StrongBrand = Table Mean VWAP values by Crisis Status and Brand Strength
 mean_vwap_by_crisis_strongbrand <- data %>%
   group_by(Crisis, StrongBrand) %>%
   summarise(Mean_VWAP = mean(VWAP, na.rm = TRUE))
 
 print(mean_vwap_by_crisis_strongbrand)
 ```
+```{r}
+library(dplyr)
+
+# Calculate the count of companies for each StrongBrand category
+company_count <- data %>%
+  group_by(StrongBrand) %>%
+  summarise(Count = n_distinct(CompanyName))
+
+# Print the results
+print(company_count)
+```
+
 ```{r}
 library(dplyr)
 library(ggplot2)
