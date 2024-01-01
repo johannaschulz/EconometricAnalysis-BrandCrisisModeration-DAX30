@@ -35,11 +35,9 @@ library(plm)
 install.packages("ggtext")
 library(ggtext)
 
-install.packages("ggplot2")
 install.packages("reshape2")
-install.packages("ggcorrplot")
+library(reshape2)
 ```
-
 
 ## Import and view the data set
 ```{r}
@@ -88,7 +86,7 @@ library(ggplot2)
 library(reshape2)
 library(ggcorrplot)
 # Compute the correlation matrix
-data_corr <- data[, c("VWAP", "BrandRanking", "CPI", "TR", "EBIT", "EBITDA", "VWAP_lagged")]
+data_corr <- data[, c("VWAP", "BrandRanking", "CPI", "TR", "EBIT", "VWAP_lagged")]
 corr_matrix <- cor(data_corr, use = "complete.obs")
 
 # Transform the correlation matrix into a long format
@@ -116,6 +114,7 @@ ggplot(corr_long, aes(Var1, Var2, fill = value)) +
 ```
 
 #### Scatter Plot VWAP - CPI
+This graph is only viewed by the author and not included in the thesis.
 ```{r}
 ggplot(data, aes(x = CPI, y = VWAP)) +
   geom_point() +
@@ -132,14 +131,15 @@ ggplot(data, aes(x = CPI, y = VWAP, color = TickerCode)) +
   theme(legend.position = "bottom") 
 
 ```
+
+#### Time Series CPI | Figure 4: Time Series of Consumer Price Index per Month
 ```{r}
-# Load the ggplot2 package
 library(ggplot2)
 
-# Convert MonthYear to Date if it's not already
+# Convert MonthYear to Date
 data$MonthYear <- as.Date(data$MonthYear)
 
-# Create the time series plot with the specified lines
+# Create the time series plot with base month lines
 cpi_plot <- ggplot(data, aes(x = MonthYear, y = CPI)) +
   geom_line() +
   geom_vline(xintercept = as.Date("2019-12-01"), linetype = "dotted", color = "grey") +
@@ -155,12 +155,12 @@ cpi_plot <- ggplot(data, aes(x = MonthYear, y = CPI)) +
 
 cpi_plot
 ```
-
+Save the plot in the outputs folder
 ```{r}
 ggsave("CPI_Time_Series.png", plot = cpi_plot, width = 10, height = 6, dpi = 300)
 ```
 
-#### Grouped Summary Statistics for Dummy Variables
+#### Grouped Summary Statistics for Categorical Variables
 ```{r}
 # Summary of VWAP by StrongBrand
 data %>%
@@ -189,6 +189,7 @@ data %>%
             Median_VWAP = median(VWAP, na.rm = TRUE),
             SD_VWAP = sd(VWAP, na.rm = TRUE))
 ```
+
 ```{r}
 library(dplyr)
 
@@ -199,27 +200,29 @@ mean_vwap_by_crisis <- data %>%
 
 print(mean_vwap_by_crisis)
 ```
+
+##### Table 9: Mean VWAP values by Crisis Status and Brand Strength
 ```{r}
-# mean of VWAP for each combination of Crisis and StrongBrand = Table Mean VWAP values by Crisis Status and Brand Strength
+# mean of VWAP for each combination of Crisis and StrongBrand 
 mean_vwap_by_crisis_strongbrand <- data %>%
   group_by(Crisis, StrongBrand) %>%
   summarise(Mean_VWAP = mean(VWAP, na.rm = TRUE))
 
 print(mean_vwap_by_crisis_strongbrand)
 ```
+
 ```{r}
 library(dplyr)
-
 # Calculate the count of companies for each StrongBrand category
 company_count <- data %>%
   group_by(StrongBrand) %>%
   summarise(Count = n_distinct(CompanyName))
 
-# Print the results
 print(company_count)
 ```
 
 ```{r}
+# visualisation of the information from above, not used in the thesis
 library(dplyr)
 library(ggplot2)
 
@@ -254,39 +257,43 @@ ggplot(mean_vwap_data, aes(x = Category, y = Mean_VWAP, fill = Category)) +
 
 ### Models
 
-#### Hypotheses H1a-H1b | Model 1.0 (without controls), Model 1.1 (with controls), Model 1.2 - CPI as IV (with controls)
+All models are first without controls, then stepwise control adding, finally, heteroskedasticity consistent standard errors are used.
 
+#### Hypotheses H1-H2 | Model 1.0 (Crisis as IV) to Model 1.1 (CPI as IV)
+
+#### Model 1.0 | Hypothesis H1, Crisis as IV
 ```{r}
 # Model 1.0 without controls, Crisis as IV
 linreg1_0 <- lm(VWAP ~ Crisis, data = data)
 summary(linreg1_0)
 ```
-##### Stepwise Controls Adding
+##### Stepwise Controls Adding Model 1.0 | Results are reported in Table 11
 ```{r}
 # Adding 1 control: Sector Information
-linreg1_0A <- lm(VWAP ~ Crisis + Sector, data = data)
-summary(linreg1_0A)
+linreg1_0 <- lm(VWAP ~ Crisis + Sector, data = data)
+summary(linreg1_0)
 ```
 
 ```{r}
 # Adding 2nd control: TR
-linreg1_0A <- lm(VWAP ~ Crisis + Sector + TR, data = data)
-summary(linreg1_0A)
+linreg1_0 <- lm(VWAP ~ Crisis + Sector + TR, data = data)
+summary(linreg1_0)
 ```
 
 ```{r}
 # Adding 3rd control: EBIT
-linreg1_1 <- lm(VWAP ~ Crisis + Sector + TR + EBIT, data = data)
-summary(linreg1_1)
+linreg1_0 <- lm(VWAP ~ Crisis + Sector + TR + EBIT, data = data)
+summary(linreg1_0)
 ```
+
 ```{r}
 # Finally: Adding 4th control: lagged VWAP
 # Model 1.1 with controls, Crisis as IV
-linreg1_1 <- lm(VWAP ~ Crisis + Sector + TR + EBIT + VWAP_lagged, data = data)
-summary(linreg1_1)
+linreg1_0 <- lm(VWAP ~ Crisis + Sector + TR + EBIT + VWAP_lagged, data = data)
+summary(linreg1_0)
 ```
 
-##### OLS Assumptions | Model 1.1 (with controls) "linreg1_1"
+##### OLS Assumptions | Model 1.0 (with controls) "linreg1_0"
 Random sample: observations are iid
 
 1. Nonzero expectation: Zero mean for errors
@@ -298,6 +305,83 @@ Random sample: observations are iid
 
 --> All tests need to be NOT significant to meet assumptions
 
+```{r}
+# 1. Nonzero expectation: Zero mean for errors -> Resest test
+resettest(linreg1_0) #significant, assumption violated
+```
+
+```{r}
+# 2. Homoscedasticity: Constant variance for errors -> Breusch Pagan Test & Goldfeld-Quandt Test
+gqtest(linreg1_0) # not significant, assumption holds
+```
+
+```{r}
+# 3. Pairwise uncorrelated errors -> Plotting residuals against time
+plot(residuals(linreg1_0) ~ data$MonthYear) # random, assumption holds
+```
+
+```{r}
+# 4. Errors distributed multivariate normal -> Jarque and Bera (1980)
+jarque.bera.test(residuals(linreg1_0)) #significant -> VIOLATED
+```
+
+```{r}
+# 5. Nonstochastic regressors, no correlation of predictor and residuals -> results should show no correlation 
+residuals <- residuals(linreg1_0)
+
+#results should show no correlation --> VIOLATED
+cor.test(residuals,data$VWAP) #correlation = 0.99
+#cor.test(residuals,data$Crisis) # correlation = 1.803057e-16 
+```
+
+```{r}
+# 6. No multicollinearity -> VIF values should be smaller than 4
+## does not apply because only one predictor yet
+```
+
+```{r}
+# Finally, adding Heteroskedasticity Robust Standard Errors to the model to account for the violations
+library(lmtest)
+library(sandwich)
+# Robust t test
+coeftest_results <- coeftest(linreg1_0, vcov = vcovHC(linreg1_0, type = "HC0"))
+
+print(coeftest_results)
+```
+
+#### Model 1.1 | Hypothesis H2, CPI as IV
+```{r}
+# Model 1.2 without controls, CPI as IV
+linreg1_1 <- lm(VWAP ~ CPI, data = data)
+summary(linreg1_1)
+```
+
+##### Stepwise Controls Adding Model 1.1 | Results are reported in Table 12
+```{r}
+# stepwise control adding
+linreg1_1 <- lm(VWAP ~ CPI + Sector, data = data)
+summary(linreg1_1)
+```
+
+```{r}
+# stepwise control adding
+linreg1_1 <- lm(VWAP ~ CPI + Sector + TR, data = data)
+summary(linreg1_1)
+```
+
+```{r}
+# stepwise control adding
+linreg1_1 <- lm(VWAP ~ CPI + Sector + TR + EBIT, data = data)
+summary(linreg1_1)
+```
+
+```{r}
+# Model 1.1 with controls, CPI as IV
+linreg1_1 <- lm(VWAP ~ CPI + Sector + TR + EBIT + VWAP_lagged, data = data)
+summary(linreg1_1)
+```
+
+##### OLS Assumptions | Model 1.1 (with controls) "linreg1_1"
 ```{r}
 # 1. Nonzero expectation: Zero mean for errors -> Resest test
 resettest(linreg1_1) #significant, assumption violated
@@ -317,6 +401,7 @@ plot(residuals(linreg1_1) ~ data$MonthYear) # random, assumption holds
 # 4. Errors distributed multivariate normal -> Jarque and Bera (1980)
 jarque.bera.test(residuals(linreg1_1)) #significant -> VIOLATED
 ```
+
 ```{r}
 # 5. Nonstochastic regressors, no correlation of predictor and residuals -> results should show no correlation 
 residuals <- residuals(linreg1_1)
@@ -333,114 +418,47 @@ cor.test(residuals,data$VWAP) #correlation = 0.99
 
 ```{r}
 # Finally, adding Heteroskedasticity Robust Standard Errors to the model to account for the violations
-library(lmtest)
-library(sandwich)
+
 # Robust t test
 coeftest_results <- coeftest(linreg1_1, vcov = vcovHC(linreg1_1, type = "HC0"))
 
 print(coeftest_results)
 ```
-#### Model 1.2 | Hypothesis H1b, CPI as predictor
-```{r}
-# Model 1.2 without controls, CPI as IV
-linreg1_2 <- lm(VWAP ~ CPI, data = data)
-summary(linreg1_2)
-```
-```{r}
-# stepwise control adding
-linreg1_2 <- lm(VWAP ~ CPI + Sector, data = data)
-summary(linreg1_2)
-```
 
-```{r}
-# stepwise control adding
-linreg1_2 <- lm(VWAP ~ CPI + Sector + TR, data = data)
-summary(linreg1_2)
-```
-```{r}
-# stepwise control adding
-linreg1_2 <- lm(VWAP ~ CPI + Sector + TR + EBIT, data = data)
-summary(linreg1_2)
-```
+#### Hypotheses H3-H4 | Model 2.0 (Crisis as IV and StrongBrand as Moderator) to Model 2.1 (CPI as IV and StrongBrand as Moderator)
 
-
-```{r}
-# Model 1.2 with controls, CPI as IV
-linreg1_2 <- lm(VWAP ~ CPI + Sector + TR + EBIT + VWAP_lagged, data = data)
-summary(linreg1_2)
-```
-##### OLS Assumptions for Model 1.2 | linreg1_2
-```{r}
-# 1. Nonzero expectation: Zero mean for errors -> Resest test
-resettest(linreg1_2) #significant, assumption violated
-```
-```{r}
-# 2. Homoscedasticity: Constant variance for errors -> Breusch Pagan Test & Goldfeld-Quandt Test
-gqtest(linreg1_2) # not significant, assumption holds
-```
-```{r}
-# 3. Pairwise uncorrelated errors -> Plotting residuals against time
-plot(residuals(linreg1_2) ~ data$MonthYear) # random, assumption holds
-```
-```{r}
-# 4. Errors distributed multivariate normal -> Jarque and Bera (1980)
-jarque.bera.test(residuals(linreg1_2)) #significant -> VIOLATED
-```
-```{r}
-# 5. Nonstochastic regressors, no correlation of predictor and residuals -> results should show no correlation 
-residuals <- residuals(linreg1_2)
-
-#results should show no correlation --> VIOLATED
-cor.test(residuals,data$VWAP) #correlation = 0.99
-#cor.test(residuals,data$Crisis) # correlation = 1.803057e-16 
-```
-```{r}
-# 6. No multicollinearity -> VIF values should be smaller than 4
-## does not apply because only one predictor yet
-```
-
-```{r}
-# Finally, adding Heteroskedasticity Robust Standard Errors to the model to account for the violations
-
-# Robust t test
-coeftest_results <- coeftest(linreg1_2, vcov = vcovHC(linreg1_2, type = "HC0"))
-
-print(coeftest_results)
-```
-#### Hypotheses H2a-H2b | Model 2.0 (with controls) - Crisis and StrongBrand as IV, Model 2.1 (with controls) - CPI and StrongBrand as IV
-
-##### Model 2.0 - Crisis and StrongBrand as IV
+#### Model 2.0 - Crisis and StrongBrand
 ```{r}
 # without controls
 linreg_2_0 <- lm(VWAP ~ Crisis + StrongBrand + (Crisis*StrongBrand), data = data)
 summary(linreg_2_0)
 ```
+##### Stepwise Controls Adding Model 2.0 | Results are reported in Table 13
 ```{r}
-# without controls
+# stepwise control adding
 linreg_2_0 <- lm(VWAP ~ Crisis + StrongBrand + (Crisis*StrongBrand) + Sector, data = data)
 summary(linreg_2_0)
 ```
 
 ```{r}
-# without controls
+# stepwise control adding
 linreg_2_0 <- lm(VWAP ~ Crisis + StrongBrand + (Crisis*StrongBrand) + Sector + TR, data = data)
 summary(linreg_2_0)
 ```
 
 ```{r}
-# without controls
+# stepwise control adding
 linreg_2_0 <- lm(VWAP ~ Crisis + StrongBrand + (Crisis*StrongBrand) + Sector + TR + EBIT, data = data)
 summary(linreg_2_0)
 ```
 
-
 ```{r}
-# with controls
+# with all controls 
 linreg_2_0 <- lm(VWAP ~ Crisis + StrongBrand + (Crisis*StrongBrand) + Sector + EBIT + TR + VWAP_lagged, data = data)
 summary(linreg_2_0)
 ```
 
-##### OLS Assumptions for Model 2.0 | linreg_2_0
+##### OLS Assumptions | Model 2.0 (with controls) "linreg2_0"
 ```{r}
 # 1. Nonzero expectation: Zero mean for errors -> Resest test
 resettest(linreg_2_0) #significant, assumption violated
@@ -488,22 +506,25 @@ coeftest_results <- coeftest(linreg_2_0, vcov = vcovHC(linreg_2_0, type = "HC0")
 print(coeftest_results)
 ```
 
-##### Model 2.1 - CPI and StrongBrand as IV 
+#### Model 2.1 - CPI and StrongBrand 
 ```{r}
-# without controls (see Table x in Appendix)
+# without controls
 linreg_2_1 <- lm(VWAP ~ CPI + StrongBrand + (CPI*StrongBrand), data = data)
 summary(linreg_2_1)
 ```
+##### Stepwise Controls Adding Model 2.1 | Results are reported in Table 14
 ```{r}
 # stepwise control adding 
 linreg_2_1 <- lm(VWAP ~ CPI + StrongBrand + (CPI*StrongBrand) + Sector, data = data)
 summary(linreg_2_1)
 ```
+
 ```{r}
 # stepwise control adding 
 linreg_2_1 <- lm(VWAP ~ CPI + StrongBrand + (CPI*StrongBrand) + Sector + TR , data = data)
 summary(linreg_2_1)
 ```
+
 ```{r}
 # stepwise control adding 
 linreg_2_1 <- lm(VWAP ~ CPI + StrongBrand + (CPI*StrongBrand) + Sector + TR + EBIT, data = data)
@@ -515,7 +536,7 @@ summary(linreg_2_1)
 linreg_2_1 <- lm(VWAP ~ CPI + StrongBrand + (CPI*StrongBrand) + Sector + TR + EBIT + VWAP_lagged, data = data)
 summary(linreg_2_1)
 ```
-
+##### OLS Assumptions | Model 2.1 (with controls) "linreg2_1"
 ```{r}
 # 1. Nonzero expectation: Zero mean for errors -> Resest test
 resettest(linreg_2_1) #significant, assumption violated
@@ -558,20 +579,23 @@ coeftest_results <- coeftest(linreg_2_1, vcov = vcovHC(linreg_2_1, type = "HC0")
 
 print(coeftest_results)
 ```
-#### Hypotheses H3a-H3b | Model 3.0 (with controls) - Crisis and BrandRanking as IV, Model 3.1 (with controls) - CPI and BrandRanking as IV
 
+#### Hypotheses H4-H6 | Model 3.0 (Crisis as IV and BrandRanking as Moderator) to Model 3.1 (CPI as IV and BrandRanking as Moderator)
+
+##### Aubset Creation to include only companies with strong brands and test within this subset
 ```{r}
 subset_strongbrand <- subset(data, StrongBrand == 1)
 
 head(subset_strongbrand)
 ```
 
-#### Model 3.0 - Crisis and BrandRanking as IV
+#### Model 3.0 - Crisis and BrandRanking
 ```{r}
 # without controls
 linreg_3_0 <- lm(VWAP ~ Crisis + BrandRanking + (Crisis*BrandRanking), data = subset_strongbrand)
 summary(linreg_3_0)
 ```
+##### Stepwise Controls Adding Model 2.1 | Results are reported in Table 15
 ```{r}
 # stepwise control adding
 linreg_3_0 <- lm(VWAP ~ Crisis + BrandRanking + (Crisis*BrandRanking) + Sector, data = subset_strongbrand)
@@ -583,6 +607,7 @@ summary(linreg_3_0)
 linreg_3_0 <- lm(VWAP ~ Crisis + BrandRanking + (Crisis*BrandRanking) + Sector + TR, data = subset_strongbrand)
 summary(linreg_3_0)
 ```
+
 ```{r}
 # stepwise control adding
 linreg_3_0 <- lm(VWAP ~ Crisis + BrandRanking + (Crisis*BrandRanking) + Sector + TR + EBIT, data = subset_strongbrand)
@@ -595,8 +620,7 @@ linreg_3_0 <- lm(VWAP ~ Crisis + BrandRanking + (Crisis*BrandRanking) + Sector +
 
 summary(linreg_3_0)
 ```
-
-##### OLS Assumptions for Model 3.0
+##### OLS Assumptions | Model 3.0 (with controls) "linreg3_0"
 ```{r}
 # 1. Nonzero expectation: Zero mean for errors -> Resest test
 resettest(linreg_3_0) # significant, violated
@@ -611,7 +635,6 @@ gqtest(linreg_3_0) # not significant, assumptions holds
 # 3. Pairwise uncorrelated errors -> Plotting residuals against time
 plot(residuals(linreg_3_0) ~ data$MonthYear) # random, assumption holds
 ```
-
 
 ```{r}
 # 4. Errors distributed multivariate normal -> Jarque and Bera (1980)
@@ -636,19 +659,19 @@ coeftest_results <- coeftest(linreg_3_0, vcov = vcovHC(linreg_3_0, type = "HC0")
 print(coeftest_results)
 ```
 
-#### Model 3.1 - CPI and BrandRanking as IV
-
+#### Model 3.1 - CPI and BrandRanking
 ```{r}
 # without controls
 linreg_3_1 <- lm(VWAP ~ CPI + BrandRanking + (CPI*BrandRanking), data = subset_strongbrand)
 summary(linreg_3_1)
 ```
-
+##### Stepwise Controls Adding Model 2.1 | Results are reported in Table 16
 ```{r}
 # stepwise control adding
 linreg_3_1 <- lm(VWAP ~ CPI + BrandRanking + (CPI*BrandRanking) + Sector, data = subset_strongbrand)
 summary(linreg_3_1)
 ```
+
 ```{r}
 # stepwise control adding
 linreg_3_1 <- lm(VWAP ~ CPI + BrandRanking + (CPI*BrandRanking) + Sector + TR, data = subset_strongbrand)
@@ -666,6 +689,7 @@ summary(linreg_3_1)
 linreg_3_1 <- lm(VWAP ~ CPI + BrandRanking + (CPI*BrandRanking) + Sector + TR + EBIT + VWAP_lagged, data = subset_strongbrand)
 summary(linreg_3_1)
 ```
+##### OLS Assumptions | Model 3.1 (with controls) "linreg3_1"
 ```{r}
 # 1. Nonzero expectation: Zero mean for errors -> Resest test
 resettest(linreg_3_1) #significant, assumption violated
@@ -709,42 +733,7 @@ coeftest_results <- coeftest(linreg_3_1, vcov = vcovHC(linreg_3_1, type = "HC0")
 print(coeftest_results)
 ```
 
-#### Model 2.2 | Adding Fixed Effects
-
-
-
-```{r}
-fe_model_2_2 <- plm(VWAP ~ CPI + Crisis + (Crisis*CPI), 
-                data = pdata, model = "within")
-
-#summary(fe_model_2_2)
-summary(fe_model_2_2, effect = "individual")
-```
-
-##### Hausman test
-```{r}
-# random effects model
-re_model_2_2 <- plm(VWAP ~ Crisis + StrongBrand + (Crisis * StrongBrand), 
-                    data = pdata, model = "random")
-
-# Perform Hausman test
-hausman_test <- phtest(fe_model_2_2, re_model_2_2)
-print(hausman_test) # 
-```
-
-
-
-
-
 ### Robustness Tests
-
-#### Simple Linear Regression | StrongBrand as Predictor
-```{r}
-# with all observations
-#linreg2 <- lm(VWAP ~ StrongBrand, data = data)
-#summary(linreg2)
-
-```
 
 ```{r}
 # with subset for crisis = 0
@@ -755,47 +744,5 @@ summary(linreg2_no_crisis)
 
 ```
 
-```{r}
-# 1. Nonzero expectation: Zero mean for errors -> Resest test
-resettest(linreg_2_0) #significant, assumption violated
-```
-
-```{r}
-# 2. Homoscedasticity: Constant variance for errors -> Breusch Pagan Test & Goldfeld-Quandt Test
-gqtest(linreg_2_0) # not significant, assumption holds
-```
-
-```{r}
-# 3. Pairwise uncorrelated errors -> Plotting residuals against time
-plot(residuals(linreg_2_0) ~ data$MonthYear) # random, assumption holds
-```
-
-```{r}
-# 4. Errors distributed multivariate normal -> Jarque and Bera (1980)
-jarque.bera.test(residuals(linreg_2_0)) #significant -> VIOLATED
-```
-
-```{r}
-# 5. Nonstochastic regressors, no correlation of predictor and residuals -> results should show no correlation 
-residuals <- residuals(linreg_2_0)
-
-#results should show no correlation --> VIOLATED
-cor.test(residuals,data$VWAP) #correlation = 0.99
-#cor.test(residuals,data$Crisis) # correlation = 1.803057e-16 
-```
-
-```{r}
-# 6. No multicollinearity -> VIF values should be smaller than 4
-## does not apply because only one predictor yet
-```
-
-```{r}
-# Finally, adding Heteroskedasticity Robust Standard Errors to the model to account for the violations
-
-# Robust t test
-coeftest_results <- coeftest(linreg_2_0, vcov = vcovHC(linreg_2_0, type = "HC0"))
-
-print(coeftest_results)
-```
 
 
