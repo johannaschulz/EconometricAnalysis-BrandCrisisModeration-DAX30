@@ -37,6 +37,13 @@ library(ggtext)
 
 install.packages("reshape2")
 library(reshape2)
+
+install.packages("broom")
+library(broom)
+
+install.packages("writexl")
+library(writexl)
+
 ```
 
 ## Import and view the data set
@@ -686,14 +693,127 @@ print(coeftest_results)
 
 ### Robustness Tests
 
+#### create a subset to investigate whether a shorter observation period changes the results
 ```{r}
-# with subset for crisis = 0
-data_no_crisis <- subset(data, Crisis == 0)
+library(dplyr)
+# subset with observations from October 2019 to March 2020
+subset_period <- data %>%
+  filter(MonthYear >= as.Date("2019-10-01") & MonthYear <= as.Date("2020-03-31"))
 
-linreg2_no_crisis <- lm(VWAP ~ StrongBrand, data = data_no_crisis)
-summary(linreg2_no_crisis)
+head(subset_period)
+```
+#### run the regression from above 
+##### Model 1.0 | robustnesscheck
+```{r}
+linreg_1_0_period <- lm(VWAP ~ Crisis + Sector + TR + EBIT + VWAP_lagged, data = subset_period)
+summary(linreg_1_0_period)
+```
 
+```{r}
+# Robust t test
+coeftest_results <- coeftest(linreg_1_0_period, vcov = vcovHC(linreg_1_0_period, type = "HC0"))
+
+print(coeftest_results)
+```
+##### Model 1.1 | robustnesscheck
+```{r}
+linreg_1_1_period <- lm(VWAP ~ CPI + Sector + TR + EBIT + VWAP_lagged, data = subset_period)
+summary(linreg_1_1_period)
 ```
 
 
+```{r}
+# Robust t test
+coeftest_results <- coeftest(linreg_1_1_period, vcov = vcovHC(linreg_1_1_period, type = "HC0"))
+
+print(coeftest_results)
+```
+##### Model 2.0 | robustnesscheck
+```{r}
+linreg_2_0_period <- lm(VWAP ~ Crisis + StrongBrand + (Crisis*StrongBrand) + Sector + TR + EBIT + VWAP_lagged, data = subset_period)
+summary(linreg_2_0_period)
+```
+
+```{r}
+# Robust t test
+coeftest_results <- coeftest(linreg_2_0_period, vcov = vcovHC(linreg_2_0_period, type = "HC0"))
+
+print(coeftest_results)
+```
+##### Model 2.1 | robustnesscheck
+```{r}
+linreg_2_1_period <- lm(VWAP ~ CPI + StrongBrand + (CPI*StrongBrand) + Sector + TR + EBIT + VWAP_lagged, data = subset_period)
+summary(linreg_2_1_period)
+```
+
+
+```{r}
+# Robust t test
+coeftest_results <- coeftest(linreg_2_1_period, vcov = vcovHC(linreg_2_1_period, type = "HC0"))
+
+print(coeftest_results)
+```
+##### Model 3.0 | robustnesscheck
+```{r}
+linreg_3_0_period <- lm(VWAP ~ Crisis + BrandRanking + (Crisis*BrandRanking) + Sector + TR + EBIT + VWAP_lagged, data = subset_period)
+summary(linreg_3_0_period)
+```
+
+```{r}
+# Robust t test
+coeftest_results <- coeftest(linreg_3_0_period, vcov = vcovHC(linreg_3_0_period, type = "HC0"))
+
+print(coeftest_results)
+```
+##### Model 3.1 | robustnesscheck
+```{r}
+linreg_3_1_period <- lm(VWAP ~ CPI + BrandRanking + (CPI*BrandRanking) + Sector + TR + EBIT + VWAP_lagged, data = subset_period)
+summary(linreg_3_1_period)
+```
+
+```{r}
+# Robust t test
+coeftest_results <- coeftest(linreg_3_1_period, vcov = vcovHC(linreg_3_1_period, type = "HC0"))
+
+print(coeftest_results)
+```
+```{r}
+library("broom")
+
+# model results are transferred to a small data frame
+linreg_1_0_period <- broom::tidy(linreg_1_0_period)
+linreg_1_1_period <- broom::tidy(linreg_1_1_period)
+linreg_2_0_period <- broom::tidy(linreg_2_0_period)
+linreg_2_1_period <- broom::tidy(linreg_2_1_period)
+linreg_3_0_period <- broom::tidy(linreg_3_0_period)
+linreg_3_1_period <- broom::tidy(linreg_3_1_period)
+
+# add model name as a column
+linreg_1_0_period$model <- "Model 1.0"
+linreg_1_1_period$model <- "Model 1.1"
+linreg_2_0_period$model <- "Model 2.0"
+linreg_2_1_period$model <- "Model 2.1"
+linreg_3_0_period$model <- "Model 3.0"
+linreg_3_1_period$model <- "Model 3.1"
+
+# creation of one data frame
+regression_table <- rbind(linreg_1_0_period, linreg_1_1_period, linreg_2_0_period,linreg_2_1_period, linreg_3_0_period, linreg_3_1_period )
+
+```
+
+```{r}
+final_table <- regression_table %>% 
+  select(model, term, estimate, std.error, statistic, p.value)
+```
+
+```{r}
+print(final_table)
+```
+```{r}
+# save the table
+library("writexl")
+output_path <- "../outputs/regression_coefficients.xlsx"
+
+writexl::write_xlsx(final_table, path = output_path)
+```
 
