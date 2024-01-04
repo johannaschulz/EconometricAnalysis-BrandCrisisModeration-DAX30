@@ -282,13 +282,13 @@ summary(linreg1_0)
 
 ```{r}
 # Adding 3rd control: EBIT
-linreg1_0 <- lm(VWAP ~ Crisis + Sector + TR + EBIT, data = data)
+linreg1_0_ <- lm(VWAP ~ Crisis + Sector + TR + EBIT, data = data)
 summary(linreg1_0)
 ```
 
 ```{r}
 # Finally: Adding 4th control: lagged VWAP
-# Model 1.1 with controls, Crisis as IV
+# Model 1.0 with controls, Crisis as IV
 linreg1_0 <- lm(VWAP ~ Crisis + Sector + TR + EBIT + VWAP_lagged, data = data)
 summary(linreg1_0)
 ```
@@ -298,45 +298,37 @@ Random sample: observations are iid
 
 1. Nonzero expectation: Zero mean for errors
 2. Homoscedasticity: Constant variance for errors
-3. Pairwise uncorrelated errors
-4. Errors distributed multivariate normal
-5. Nonstochastic regressors
-6. No multicollinearity
+3. Normal distribution of errors
+4. No multicollinearity
 
 --> All tests need to be NOT significant to meet assumptions
 
 ```{r}
+library(lmtest)
 # 1. Nonzero expectation: Zero mean for errors -> Resest test
-resettest(linreg1_0) #significant, assumption violated
+resettest(linreg1_0_) #significant, assumption violated
 ```
 
 ```{r}
-# 2. Homoscedasticity: Constant variance for errors -> Breusch Pagan Test & Goldfeld-Quandt Test
-gqtest(linreg1_0) # not significant, assumption holds
+# 2. Homoscedasticity: Constant variance for errors -> Goldfeld-Quandt Test
+gqtest(linreg1_0_) # not significant, assumption holds
 ```
 
 ```{r}
-# 3. Pairwise uncorrelated errors -> Plotting residuals against time
-plot(residuals(linreg1_0) ~ data$MonthYear) # random, assumption holds
+# 3.1 Normaldistributuon of errors -> Plotting residuals against time
+plot(residuals(linreg1_0_) ~ data$MonthYear) # random, assumption holds
 ```
 
 ```{r}
-# 4. Errors distributed multivariate normal -> Jarque and Bera (1980)
-jarque.bera.test(residuals(linreg1_0)) #significant -> VIOLATED
+library(tseries)
+# 3.2 Errors distributed multivariate normal -> Jarque and Bera (1980)
+jarque.bera.test(residuals(linreg1_0_)) # slighlty significant -> VIOLATED
 ```
 
 ```{r}
-# 5. Nonstochastic regressors, no correlation of predictor and residuals -> results should show no correlation 
-residuals <- residuals(linreg1_0)
-
-#results should show no correlation --> VIOLATED
-cor.test(residuals,data$VWAP) #correlation = 0.99
-#cor.test(residuals,data$Crisis) # correlation = 1.803057e-16 
-```
-
-```{r}
-# 6. No multicollinearity -> VIF values should be smaller than 4
-## does not apply because only one predictor yet
+library(carData)
+# 4. No multicollinearity -> VIF values of 5-10 indicate a strong correlation
+vif(linreg1_0)
 ```
 
 ```{r}
@@ -351,7 +343,7 @@ print(coeftest_results)
 
 #### Model 1.1 | Hypothesis H2, CPI as IV
 ```{r}
-# Model 1.2 without controls, CPI as IV
+# Model 1.1 without controls, CPI as IV
 linreg1_1 <- lm(VWAP ~ CPI, data = data)
 summary(linreg1_1)
 ```
@@ -371,12 +363,12 @@ summary(linreg1_1)
 
 ```{r}
 # stepwise control adding
-linreg1_1 <- lm(VWAP ~ CPI + Sector + TR + EBIT, data = data)
-summary(linreg1_1)
+linreg1_1_ <- lm(VWAP ~ CPI + Sector + TR + EBIT, data = data)
+summary(linreg1_1_)
 ```
 
 ```{r}
-# Model 1.1 with controls, CPI as IV
+# Model 1.1 with all controls, CPI as IV
 linreg1_1 <- lm(VWAP ~ CPI + Sector + TR + EBIT + VWAP_lagged, data = data)
 summary(linreg1_1)
 ```
@@ -384,36 +376,29 @@ summary(linreg1_1)
 ##### OLS Assumptions | Model 1.1 (with controls) "linreg1_1"
 ```{r}
 # 1. Nonzero expectation: Zero mean for errors -> Resest test
-resettest(linreg1_1) #significant, assumption violated
+resettest(linreg1_1_) #significant, assumption violated
 ```
 
 ```{r}
-# 2. Homoscedasticity: Constant variance for errors -> Breusch Pagan Test & Goldfeld-Quandt Test
-gqtest(linreg1_1) # not significant, assumption holds
+# 2. Homoscedasticity: Constant variance for errors -> Goldfeld-Quandt Test
+gqtest(linreg1_1_) # not significant, assumption holds
+```
+
+
+```{r}
+# 3.1 Normal distribution of errors -> Plotting residuals against time
+plot(residuals(linreg1_1_) ~ data$MonthYear) # random, assumption holds
+```
+
+
+```{r}
+# 3.2 Errors distributed multivariate normal -> Jarque and Bera (1980)
+jarque.bera.test(residuals(linreg1_1_)) # slightly significant -> VIOLATED
 ```
 
 ```{r}
-# 3. Pairwise uncorrelated errors -> Plotting residuals against time
-plot(residuals(linreg1_1) ~ data$MonthYear) # random, assumption holds
-```
-
-```{r}
-# 4. Errors distributed multivariate normal -> Jarque and Bera (1980)
-jarque.bera.test(residuals(linreg1_1)) #significant -> VIOLATED
-```
-
-```{r}
-# 5. Nonstochastic regressors, no correlation of predictor and residuals -> results should show no correlation 
-residuals <- residuals(linreg1_1)
-
-#results should show no correlation --> VIOLATED
-cor.test(residuals,data$VWAP) #correlation = 0.99
-#cor.test(residuals,data$Crisis) # correlation = 1.803057e-16 
-```
-
-```{r}
-# 6. No multicollinearity -> VIF values should be smaller than 4
-## does not apply because only one predictor yet
+# 4. No (strong) multicollinearity -> 
+vif(linreg1_1)
 ```
 
 ```{r}
@@ -448,8 +433,8 @@ summary(linreg_2_0)
 
 ```{r}
 # stepwise control adding
-linreg_2_0 <- lm(VWAP ~ Crisis + StrongBrand + (Crisis*StrongBrand) + Sector + TR + EBIT, data = data)
-summary(linreg_2_0)
+linreg_2_0_ <- lm(VWAP ~ Crisis + StrongBrand + (Crisis*StrongBrand) + Sector + TR + EBIT, data = data)
+summary(linreg_2_0_)
 ```
 
 ```{r}
@@ -459,42 +444,30 @@ summary(linreg_2_0)
 ```
 
 ##### OLS Assumptions | Model 2.0 (with controls) "linreg2_0"
+
 ```{r}
 # 1. Nonzero expectation: Zero mean for errors -> Resest test
-resettest(linreg_2_0) #significant, assumption violated
-```
-```{r}
-# 1. Nonzero expectation: Zero mean for errors -> Resest test
-resettest(linreg_2_0) #significant, assumption violated
+resettest(linreg_2_0_) #significant, assumption violated
 ```
 
 ```{r}
-# 2. Homoscedasticity: Constant variance for errors -> Breusch Pagan Test & Goldfeld-Quandt Test
-gqtest(linreg_2_0) # not significant, assumption holds
+# 2. Homoscedasticity: Constant variance for errors -> Goldfeld-Quandt Test
+gqtest(linreg_2_0_) # not significant, assumption holds
 ```
 
 ```{r}
-# 3. Pairwise uncorrelated errors -> Plotting residuals against time
-plot(residuals(linreg_2_0) ~ data$MonthYear) # random, assumption holds
+# 3.1 Normal distribtion of errors -> Plotting residuals against time
+plot(residuals(linreg_2_0_) ~ data$MonthYear) # random, assumption holds
 ```
 
 ```{r}
-# 4. Errors distributed multivariate normal -> Jarque and Bera (1980)
-jarque.bera.test(residuals(linreg_2_0)) #significant -> VIOLATED
+# 3.2 Errors distributed multivariate normal -> Jarque and Bera (1980)
+jarque.bera.test(residuals(linreg_2_0_)) #significant -> VIOLATED
 ```
 
 ```{r}
-# 5. Nonstochastic regressors, no correlation of predictor and residuals -> results should show no correlation 
-residuals <- residuals(linreg_2_0)
-
-#results should show no correlation --> VIOLATED
-cor.test(residuals,data$VWAP) #correlation = 0.99
-#cor.test(residuals,data$Crisis) # correlation = 1.803057e-16 
-```
-
-```{r}
-# 6. No multicollinearity -> VIF values should be smaller than 4
-## does not apply because only one predictor yet
+# 4. No multicollinearity -> VIF values not be higher than 5
+vif(linreg_2_0, type ="predictor")
 ```
 
 ```{r}
@@ -527,8 +500,8 @@ summary(linreg_2_1)
 
 ```{r}
 # stepwise control adding 
-linreg_2_1 <- lm(VWAP ~ CPI + StrongBrand + (CPI*StrongBrand) + Sector + TR + EBIT, data = data)
-summary(linreg_2_1)
+linreg_2_1_ <- lm(VWAP ~ CPI + StrongBrand + (CPI*StrongBrand) + Sector + TR + EBIT, data = data)
+summary(linreg_2_1_)
 ```
 
 ```{r}
@@ -539,36 +512,27 @@ summary(linreg_2_1)
 ##### OLS Assumptions | Model 2.1 (with controls) "linreg2_1"
 ```{r}
 # 1. Nonzero expectation: Zero mean for errors -> Resest test
-resettest(linreg_2_1) #significant, assumption violated
+resettest(linreg_2_1_) #significant, assumption violated
 ```
 
 ```{r}
-# 2. Homoscedasticity: Constant variance for errors -> Breusch Pagan Test & Goldfeld-Quandt Test
-gqtest(linreg_2_1) # not significant, assumption holds
+# 2. Homoscedasticity: Constant variance for errors -> Goldfeld-Quandt Test
+gqtest(linreg_2_1_) # not significant, assumption holds
 ```
 
 ```{r}
-# 3. Pairwise uncorrelated errors -> Plotting residuals against time
-plot(residuals(linreg_2_1) ~ data$MonthYear) # random, assumption holds
+# 3.1 Normal distribtion of errors -> Plotting residuals against time
+plot(residuals(linreg_2_1_) ~ data$MonthYear) # random, assumption holds
 ```
 
 ```{r}
-# 4. Errors distributed multivariate normal -> Jarque and Bera (1980)
-jarque.bera.test(residuals(linreg_2_1)) #significant -> VIOLATED
+# 3.2 Errors distributed multivariate normal -> Jarque and Bera (1980)
+jarque.bera.test(residuals(linreg_2_1_)) #significant -> VIOLATED
 ```
 
 ```{r}
-# 5. Nonstochastic regressors, no correlation of predictor and residuals -> results should show no correlation 
-residuals <- residuals(linreg_2_1)
-
-#results should show no correlation --> VIOLATED
-cor.test(residuals,data$VWAP) #correlation = 0.99
-#cor.test(residuals,data$Crisis) # correlation = 1.803057e-16 
-```
-
-```{r}
-# 6. No multicollinearity -> VIF values should be smaller than 4
-## does not apply because only one predictor yet
+# 4. No multicollinearity 
+vif(linreg_2_1, type ="predictor")
 ```
 
 ```{r}
@@ -610,8 +574,8 @@ summary(linreg_3_0)
 
 ```{r}
 # stepwise control adding
-linreg_3_0 <- lm(VWAP ~ Crisis + BrandRanking + (Crisis*BrandRanking) + Sector + TR + EBIT, data = subset_strongbrand)
-summary(linreg_3_0)
+linreg_3_0_ <- lm(VWAP ~ Crisis + BrandRanking + (Crisis*BrandRanking) + Sector + TR + EBIT, data = subset_strongbrand)
+summary(linreg_3_0_)
 ```
 
 ```{r}
@@ -623,31 +587,27 @@ summary(linreg_3_0)
 ##### OLS Assumptions | Model 3.0 (with controls) "linreg3_0"
 ```{r}
 # 1. Nonzero expectation: Zero mean for errors -> Resest test
-resettest(linreg_3_0) # significant, violated
+resettest(linreg_3_0_) # significant, violated
 ```
 
 ```{r}
-# 2. Homoscedasticity: Constant variance for errors -> Breusch Pagan Test & Goldfeld-Quandt Test
-gqtest(linreg_3_0) # not significant, assumptions holds
+# 2. Homoscedasticity: Constant variance for errors -> Goldfeld-Quandt Test
+gqtest(linreg_3_0_) # not significant, assumption holds
 ```
 
 ```{r}
-# 3. Pairwise uncorrelated errors -> Plotting residuals against time
-plot(residuals(linreg_3_0) ~ data$MonthYear) # random, assumption holds
+# 3.1 Normal distribtion of errors -> Plotting residuals against time
+plot(residuals(linreg_3_0_) ~ subset_strongbrand$MonthYear) # random, assumption holds
 ```
 
 ```{r}
-# 4. Errors distributed multivariate normal -> Jarque and Bera (1980)
-jarque.bera.test(residuals(linreg_3_0)) # significant -> VIOLATED
-
-# additional test: Shapiro-Wilk 
-shapiro.test(residuals(linreg_3_0)) # significant -> VIOLATED
+# 3.2 Errors distributed multivariate normal -> Jarque and Bera (1980)
+jarque.bera.test(residuals(linreg_3_0_)) #significant -> VIOLATED
 ```
 
 ```{r}
-# 6. No multicollinearity -> VIF values should be smaller than 4
-vif(linreg_3_0)
-
+# 4. No multicollinearity 
+vif(linreg_3_0, type = "predictor")
 ```
 
 ```{r}
@@ -680,8 +640,8 @@ summary(linreg_3_1)
 
 ```{r}
 # stepwise control adding
-linreg_3_1 <- lm(VWAP ~ CPI + BrandRanking + (CPI*BrandRanking) + Sector + TR + EBIT, data = subset_strongbrand)
-summary(linreg_3_1)
+linreg_3_1_ <- lm(VWAP ~ CPI + BrandRanking + (CPI*BrandRanking) + Sector + TR + EBIT, data = subset_strongbrand)
+summary(linreg_3_1_)
 ```
 
 ```{r}
@@ -692,36 +652,27 @@ summary(linreg_3_1)
 ##### OLS Assumptions | Model 3.1 (with controls) "linreg3_1"
 ```{r}
 # 1. Nonzero expectation: Zero mean for errors -> Resest test
-resettest(linreg_3_1) #significant, assumption violated
+resettest(linreg_3_1_) #significant, assumption violated
 ```
 
 ```{r}
-# 2. Homoscedasticity: Constant variance for errors -> Breusch Pagan Test & Goldfeld-Quandt Test
-gqtest(linreg_3_1) # not significant, assumption holds
+# 2. Homoscedasticity: Constant variance for errors -> Goldfeld-Quandt Test
+gqtest(linreg_3_1_) # not significant, assumption holds
 ```
 
 ```{r}
-# 3. Pairwise uncorrelated errors -> Plotting residuals against time
-plot(residuals(linreg_3_1) ~ data$MonthYear) # random, assumption holds
+# 3.1 Normal distribtion of errors -> Plotting residuals against time
+plot(residuals(linreg_3_1_) ~ subset_strongbrand$MonthYear) # random, assumption holds
 ```
 
 ```{r}
-# 4. Errors distributed multivariate normal -> Jarque and Bera (1980)
-jarque.bera.test(residuals(linreg_3_1)) #significant -> VIOLATED
+# 3.2 Errors distributed multivariate normal -> Jarque and Bera (1980)
+jarque.bera.test(residuals(linreg_3_1_)) #significant -> VIOLATED
 ```
 
 ```{r}
-# 5. Nonstochastic regressors, no correlation of predictor and residuals -> results should show no correlation 
-residuals <- residuals(linreg_3_1)
-
-#results should show no correlation --> VIOLATED
-cor.test(residuals,data$VWAP) #correlation = 0.99
-#cor.test(residuals,data$Crisis) # correlation = 1.803057e-16 
-```
-
-```{r}
-# 6. No multicollinearity -> VIF values should be smaller than 4
-## does not apply because only one predictor yet
+# 4. No multicollinearity 
+vif(linreg_3_1, type = "predictor")
 ```
 
 ```{r}
