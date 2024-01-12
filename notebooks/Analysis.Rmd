@@ -5,28 +5,28 @@ Specifically, this file include the analysis for the main analysis.
 
 ## Load libraries
 ```{r}
-install.packages(readxl)
+install.packages("readxl")
 library(readxl)
 
-install.packages(ggplot2)
+install.packages("ggplot2")
 library(ggplot2)
 
-install.packages(ggcorrplot)
+install.packages("ggcorrplot")
 library(ggcorrplot)
 
-install.packages(dplyr)
+install.packages("dplyr")
 library(dplyr)
 
-install.packages(lmtest)
+install.packages("lmtest")
 library(lmtest)
 
-install.packages(tidyverse)
+install.packages("tidyverse")
 library(tidyverse)
 
-install.packages(tseries)
+install.packages("tseries")
 library(tseries)
 
-install.packages(car)
+install.packages("car")
 library(car)
 
 install.packages("plm")
