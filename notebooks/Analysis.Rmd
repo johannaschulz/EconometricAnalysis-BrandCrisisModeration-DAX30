@@ -274,7 +274,7 @@ All models are first without controls, then stepwise control adding, finally, he
 linreg1_0 <- lm(VWAP ~ Crisis, data = data)
 summary(linreg1_0)
 ```
-##### Stepwise Controls Adding Model 1.0 | Results are reported in Table 11
+##### Stepwise Controls Adding Model 1.0 | Results are reported in Table 14
 ```{r}
 # Adding 1 control: Sector Information
 linreg1_0 <- lm(VWAP ~ Crisis + Sector, data = data)
@@ -355,7 +355,7 @@ linreg1_1 <- lm(VWAP ~ CPI, data = data)
 summary(linreg1_1)
 ```
 
-##### Stepwise Controls Adding Model 1.1 | Results are reported in Table 12
+##### Stepwise Controls Adding Model 1.1 | Results are reported in Table 15
 ```{r}
 # stepwise control adding
 linreg1_1 <- lm(VWAP ~ CPI + Sector, data = data)
@@ -425,7 +425,7 @@ print(coeftest_results)
 linreg_2_0 <- lm(VWAP ~ Crisis + StrongBrand + (Crisis*StrongBrand), data = data)
 summary(linreg_2_0)
 ```
-##### Stepwise Controls Adding Model 2.0 | Results are reported in Table 13
+##### Stepwise Controls Adding Model 2.0 | Results are reported in Table 16
 ```{r}
 # stepwise control adding
 linreg_2_0 <- lm(VWAP ~ Crisis + StrongBrand + (Crisis*StrongBrand) + Sector, data = data)
@@ -492,7 +492,7 @@ print(coeftest_results)
 linreg_2_1 <- lm(VWAP ~ CPI + StrongBrand + (CPI*StrongBrand), data = data)
 summary(linreg_2_1)
 ```
-##### Stepwise Controls Adding Model 2.1 | Results are reported in Table 14
+##### Stepwise Controls Adding Model 2.1 | Results are reported in Table 17
 ```{r}
 # stepwise control adding 
 linreg_2_1 <- lm(VWAP ~ CPI + StrongBrand + (CPI*StrongBrand) + Sector, data = data)
@@ -566,7 +566,7 @@ head(subset_strongbrand)
 linreg_3_0 <- lm(VWAP ~ Crisis + BrandRanking + (Crisis*BrandRanking), data = subset_strongbrand)
 summary(linreg_3_0)
 ```
-##### Stepwise Controls Adding Model 2.1 | Results are reported in Table 15
+##### Stepwise Controls Adding Model 3.0 | Results are reported in Table 18
 ```{r}
 # stepwise control adding
 linreg_3_0 <- lm(VWAP ~ Crisis + BrandRanking + (Crisis*BrandRanking) + Sector, data = subset_strongbrand)
@@ -632,7 +632,7 @@ print(coeftest_results)
 linreg_3_1 <- lm(VWAP ~ CPI + BrandRanking + (CPI*BrandRanking), data = subset_strongbrand)
 summary(linreg_3_1)
 ```
-##### Stepwise Controls Adding Model 2.1 | Results are reported in Table 16
+##### Stepwise Controls Adding Model 3.1 | Results are reported in Table 19
 ```{r}
 # stepwise control adding
 linreg_3_1 <- lm(VWAP ~ CPI + BrandRanking + (CPI*BrandRanking) + Sector, data = subset_strongbrand)
